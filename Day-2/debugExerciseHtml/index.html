@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Debug exercise - 1</title>
+
+    <style>
+        h3{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1 -->
+    <h3>Q-1 Add a "tooltip" to the paragraph below with the text "Dot Batch".</h3>
+    <p tooltip="Dot Batch">Web Development Master Course - wrong</p>
+    
+    <h3>Answer-1</h3>
+    <p title="Dot Batch">Web Development Master Course - correct</p>
+
+    <!-- 2 -->
+    <h3>Q-2 Add six headings to the document with the text "CodeHelp". 
+    Start with the most important heading (the largest) and end with the least important heading (the smallest).</h3>
+    <p>CodeHelp</p>
+    <p>CodeHelp</p>
+    <p>CodeHelp</p>
+    <p>CodeHelp</p>
+    <p>CodeHelp</p>
+    <p>CodeHelp</p>
+
+    <h3>Answer-2</h3>
+    <h1>CodeHelp</h1>
+    <h2>CodeHelp</h2>
+    <h3 style="color: #000;">CodeHelp</h3>
+    <h4>CodeHelp</h4>
+    <h5>CodeHelp</h5>
+    <h6>CodeHelp</h6>
+
+    <!-- 3 -->
+    <h3>Q-3 Complete this document with proper element end tags.</h3>
+    <h1>This is a Heading
+    <p>This is a paragraph.</h1>
+
+    <h3>Answer-3</h3>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+    <!-- 4  -->
+    <h3>Q-4 Wrap this poem around such HTML tags that will preserve all spaces and line-breaks when the element is displayed.</h3>
+    <poem>
+        My house is red - a little house;
+        A happy child am I:
+        I laugh and play the whole day long,
+        I hardly ever cry.
+    
+        I have a tree, a green, green tree,
+        To shade me from the sun;
+        And under it I often sit,
+        When all my play is done.
+    </poem>
+
+    <h3>Answer-4</h3>
+    <pre>
+        My house is red - a little house;
+        A happy child am I:
+        I laugh and play the whole day long,
+        I hardly ever cry.
+    
+        I have a tree, a green, green tree,
+        To shade me from the sun;
+        And under it I often sit,
+        When all my play is done.
+    </pre>
+
+    <!-- 5 -->
+    <h3>Q-5 Use the HTML image attributes to set the size of the image to 250 pixels high and 400 pixels wide.</h3>
+    <img src="https://bit.ly/3I7Q44c">
+    
+    <h3>Answer-5</h3>
+    <img src="https://bit.ly/3I7Q44c" width="400" height="250">
+
+    <!-- 6 -->
+    <h3>Q-6 Add a submit button to the form, and specify that it should go to "/submit.html".</h3>
+    <form submit="/submit.html">
+        Email: <input type="email" name="email">
+        <p>Submit</p>
+    </form>
+
+    <h3>Answer-6</h3>
+    <form action="/submit.html">
+        Email: <input type="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
