@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="table.png">
     <style>
         table{
-            /* width: 200px; */
             border-collapse: collapse;
         }
         tr, th, td{
@@ -23,16 +22,27 @@
     <table>
         <thead>
             <tr>
+                <th style="background-color: pink;"></th>
+                <th style="background-color: powderblue;">1</th>
+                <th style="background-color: powderblue;">2</th>
+                <th style="background-color: powderblue;">3</th>
+                <th style="background-color: powderblue;">4</th>
+            </tr>
+
+            <tr>
+                <th style="background-color: coral;">1</th>
                 <th rowspan="3">Day</th>
                 <th colspan="3">Seminar</th>
             </tr>
 
             <tr>
+                <th style="background-color: coral;">2</th>
                 <th colspan="2">Schedule</th>
                 <th rowspan="2">Topic</th>
             </tr>
 
             <tr>
+                <th style="background-color: coral;">3</th>
                 <th>Begin</th>
                 <th>End</th>
             </tr>
@@ -41,41 +51,48 @@
 
         <tbody>
             <tr>
+                <th style="background-color:coral;">4</th>
                 <td rowspan="2">Monday</td>
-                <td rowspan="2" bgcolor="#faf087">8:00 a.m.</td>
-                <td rowspan="2" bgcolor="#cf8bf7">5:00 p.m.</td>
+                <td style="background-color: #faf087;" rowspan="2">8:00 a.m.</td>
+                <td style="background-color: #cf8bf7;" rowspan="2">5:00 p.m.</td>
                 <td>Introduction to XML</td>
             </tr>
 
             <tr>
+                <th style="background-color: coral;">5</th>
                 <td>Validity: DTD and Relax NG</td>
             </tr>
-
+            <!-- /////// -->
             <tr>
+                <th style="background-color: coral;">6</th>
                 <td rowspan="4">Tuesday</td>
-                <td bgcolor="#faf087">8:00 a.m.</td>
-                <td bgcolor="#faf087">11:00 a.m.</td>
-                <td rowspan="2" style="padding-bottom: 4%">XPath</td>
+                <td style="background-color: #faf087;">8:00 a.m.</td>
+                <td style="background-color: #faf087;">11:00 a.m.</td>
+                <td rowspan="2">XPath</td>
             </tr>
 
             <tr>
-                <td bgcolor="#faf087" rowspan="2">11:00 a.m.</td>
-                <td bgcolor="#8efaa4" rowspan="2">2:00 p.m.</td>
+                <th style="background-color: coral;">7</th>
+                <td style="background-color: #faf087;" rowspan="2">11:00 a.m.</td>
+                <td style="background-color: #8efaa4;" rowspan="2">2:00 p.m.</td>
             </tr>
 
             <tr>
+                <th style="background-color: coral;">8</th>
                 <td rowspan="2">XSL Transformation</td>
             </tr>
 
             <tr>
-                <td bgcolor="#8efaa4">2:00 p.m.</td>
-                <td bgcolor="#cf8bf7">5:00 p.m.</td>
+                <th style="background-color: coral;">9</th>
+                <td style="background-color: #8efaa4;">2:00 p.m.</td>
+                <td style="background-color: #cf8bf7;">5:00 p.m.</td>
             </tr>
-
+            <!-- //////// -->
             <tr>
+                <th style="background-color: coral;">10</th>
                 <td>Wednesday</td>
-                <td bgcolor="#faf087">8:00 a.m.</td>
-                <td bgcolor="#8efaa4">12:00 p.m.</td>
+                <td style="background-color: #faf087;">8:00 a.m.</td>
+                <td style="background-color: #8efaa4;">12:00 p.m.</td>
                 <td>XSL Formatting Objects</td>
             </tr>
         </tbody>
