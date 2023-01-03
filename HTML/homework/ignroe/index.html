@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: pink;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style>
+</head>
+    <body>
+
+        <!-- headings -->
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+
+        <!-- paragraph , br, hr, pre -->
+        <p>This is a paragraph</p>
+        <p>This is a <br/> paragraph</p>
+        <hr/>
+        <p>This is a paragraph</p> 
+
+        <pre>
+            This
+            is
+            a
+            preformmed
+            text.
+        </pre>
+
+        <!-- text formatting -->
+        <p><b>bold text</b></p>
+        <p><strong>bold + important text</strong></p>
+        <p><i>italic text</i></p>
+        <p><em>italic + emphasized text</em></p>
+
+        <p><mark>marked text </mark></p>
+        <p><small>smaller text </small></p>
+
+        <p><del>Deleted Text</del></p>
+        <p><s>Deleted Text</s></p>
+        
+        <p><ins>Inserted Text</ins></p>
+        <p><u>Inserted Text</u></p>
+        
+        <p>H<sub>2</sub>O</p>
+        <p>x<sup>2</sup></p>
+        
+
+        <!-- block vs inline elements -->
+        <div>
+            <p>This is <mark style="margin: 20px; padding: 20px;">marked text </mark></p>
+
+        </div>
+
+        <u style="padding: 50px">
+            underlined
+            <p>this is a text</p>
+        </u>
+
+        <!-- div, span -->
+        <div>
+            <p>div is used as a container</p>
+        </div>
+
+        <!-- blockquote -->
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+
+        <!-- q -->
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+        <!-- abbr  -->
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+        <!-- address -->
+        <p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+        <address>
+            Written by John Doe.<br> 
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        
+        <!-- cite tag -->
+        <p>The HTML cite element defines the title of a work.</p>
+        <p>Browsers usually display cite elements in italic.</p>
+
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+        <!-- bdo -->
+        <p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+
+        <bdo dir="rtl">This line will be written from right to left</bdo>
+
+        <!-- attributes(href, width, height, style ..)-->
+        <a href="https://www.w3schools.com">Visit W3Schools</a>
+        <img src="img_girl.jpg" width="500" height="600">
+        <p style="color:red;">This is a red paragraph.</p>
+
+        <!-- comments -->
+        <!-- HTML comments are not displayed in the browser, but they can help document your HTML source code. -->
+        <p>This <!-- great text --> is a paragraph.</p>
+
+        <!-- colors -->
+        <!-- HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values. -->
+        <p>Same as color name "Tomato":</p>
+
+        <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+        <h1 style="background-color:#ff6347;">#ff6347</h1>
+        <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+        <p>Same as color name "Tomato", but 50% transparent:</p>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+        <p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+        <!-- link -->
+        <a href="#">click me!!</a> 
+        <a href="#" target="_blank">click me!! _blank</a>
+        <a href="#" target="dsvnvkn">click me!! _blank</a>
+        <a href="#" target="_self">click me!! _self</a>  <!-- default -->
+        <a href="#" target="_parent">click me!! _parent</a>
+        <a href="#" target="_top">click me!! _top</a>
+
+        <p><a href="mailto:someone@example.com">Send email</a></p>
+
+        <h2>Button as a Links</h2>
+
+        <p>Click the button to go to the HTML tutorial.</p>
+
+        <button onclick="document.location='https://www.w3schools.com'">HTML Tutorial</button>
+
+        <!-- bookmark, same page linking -->
+        
+        <p><a href="#C4">Jump to Chapter 4</a></p>
+
+        <h2>Chapter 1</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 2</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 3</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2 id="C4">Chapter 4</h2>
+        <p>This chapter explains ba bla bla</p>
+
+
+        <!-- image map -->
+        <h2>Image Maps</h2>
+        <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+        <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        </map>
+
+
+
+
+</body>
+</html>
