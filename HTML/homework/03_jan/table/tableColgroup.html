@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title style="color: red;">Document</title>
 
     <style>
         table{
@@ -26,9 +26,11 @@
 
   <!-- rowgroup -->
   <!-- There is no such thing like rowgroup.
-       if you want style multiple rows at once. 
+       bcz table rows maybe grouped into <thead> <tbody> and <tfoot>
 
-       1) you can use css class or
+       if you still want to style specific rows only at once. 
+
+       1) you can use css classes or
 
        2) nth pseudo class
        table tr:nth-child(odd){ 

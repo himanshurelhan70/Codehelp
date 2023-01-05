@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: #bfbfbf;
+        text-align: center;
+      }
+
+
+      td,
+      th {
+        border: 2px solid #000;
+        padding: 15px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col span="1" style="visibility: collapse" />
+      </colgroup>
+
+      <tbody>
+        <tr style="visibility: collapse;">
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td rowspan="2" colspan="2">R1C1</td>
+          <td>R1C3</td>
+          <td rowspan="2">R1C4</td>
+          <td rowspan="2" colspan="2">R1C5</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td rowspan="2">R2C3</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td colspan="2">R3C1</td>
+          <td colspan="2">R3C4</td>
+          <td>R3C6</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>R4C1</td>
+          <td colspan="2">R4C2</td>
+          <td rowspan="2">R4C4</td>
+          <td colspan="2">R4C5</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td colspan="2" rowspan="2">R5C1</td>
+          <td rowspan="2">R5C3</td>
+          <td rowspan="2" colspan="2">R5C5</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td>R6C4</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
