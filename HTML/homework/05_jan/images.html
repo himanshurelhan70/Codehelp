@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Image -->
+
+    <!-- src, alt, width, height, style attributes -->
+    <img
+      src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+      alt="night view with red sky"
+      style="width: 500px; height: 500px"
+    />
+    <br />
+
+    <!-- gif -->
+    <img
+      src="https://media.tenor.com/V5QvgdMY9qoAAAAM/youre-so-mean-so-mean.gif"
+      alt="crying baby"
+    />
+    <br />
+
+    <!-- images as link -->
+    <a href="https://github.com/himanshurelhan70/Codehelp" target="_blank">
+      <img
+        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+        alt="night view with red sky"
+        style="width: 100px; height: 100px"
+      />
+    </a>
+
+    <!--  image map -->
+    <h2>Image Maps</h2>
+    <p>
+      Click on the computer, the phone, or the cup of coffee to go to a new page
+      and read more about the topic:
+    </p>
+
+    <img
+      src="https://www.w3schools.com/html/workplace.jpg"
+      alt="Workplace"
+      usemap="#workmap"
+      width="400"
+      height="379"
+    />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="computer.htm"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="phone.htm"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        alt="Cup of coffee"
+        href="coffee.htm"
+        onclick="myFunction()"
+        <!--
+        js
+        func
+        will
+        run
+        when
+        you
+        click
+        on
+        circle
+        --
+      />
+      />
+      <area
+        shape="default"
+        alt="deafut shape -entire shape"
+        href="default shape.htm"
+      />
+    </map>
+
+    <!-- Image map and js -->
+    <p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+
+
+
+
+    <!-- //////////// background Image -->
+
+    <p style="background-image: url('background.jpg');">
+      You can specify background images<br />
+      for any visible HTML element.<br />
+      In this example, the background image<br />
+      is specified for a p element.<br />
+      By default, the background-image<br />
+      will repeat itself in the direction(s)<br />
+      where it is smaller than the element<br />
+      where it is specified. (Try resizing the<br />
+      browser window to see how the<br />
+      background image behaves.
+    </p>
+
+    <p>If you want the entire page to have a background image, you must specify the background image on the element:</p>
+
+    <!-- bg repeat : no repeat  -->
+    <p style="background-image: url('smallBg.png'); background-repeat: no-repeat;">
+        You can specify background images<br />
+        for any visible HTML element.<br />
+        In this example, the background image<br />
+        is specified for a p element.<br />
+        By default, the background-image<br />
+        will repeat itself in the direction(s)<br />
+        where it is smaller than the element<br />
+        where it is specified. (Try resizing the<br />
+        browser window to see how the<br />
+        background image behaves.
+    </p>
+
+
+    <p style="background-image: url('smallBg.png'); background-repeat: no-repeat; background-size: cover;">
+        You can specify background images<br />
+        for any visible HTML element.<br />
+        In this example, the background image<br />
+        is specified for a p element.<br />
+        By default, the background-image<br />
+        will repeat itself in the direction(s)<br />
+        where it is smaller than the element<br />
+        where it is specified. (Try resizing the<br />
+        browser window to see how the<br />
+        background image behaves.
+    </p>
+
+    <!-- background-attachment:fixed/scroll, background-clip:  border-box-->
+
+
+
+    <!-- picture element -->
+    <picture>
+      <source media="(min-width: 900px)" srcset="https://www.w3schools.com/html/workplace.jpg">
+      <source media="(min-width: 500px)" srcset="background.jpg">
+      <img src="smallBg.png" style="width:auto;">
+    </picture>
+
+    <h2>When to use the Picture Element</h2>
+    <!-- There are two main purposes for the <picture> element:
+
+    1. Bandwidth
+    If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+    2. Format Support
+    Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements. -->
+
+      <picture>
+        <source srcset="smallBg.png">
+        <source srcset="background.jpg">
+        <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+      </picture>      
+
+
+      
+    <script>
+      function myFunction() {
+        alert("You clicked the coffee cup!");
+      }
+    </script>
+  </body>
+</html>
