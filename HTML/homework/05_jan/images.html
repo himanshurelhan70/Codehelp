@@ -96,7 +96,7 @@
 
     <!-- //////////// background Image -->
 
-    <p style="background-image: url('background.jpg');">
+    <p style="background-image: url('images/background.jpg');">
       You can specify background images<br />
       for any visible HTML element.<br />
       In this example, the background image<br />
@@ -112,7 +112,7 @@
     <p>If you want the entire page to have a background image, you must specify the background image on the element:</p>
 
     <!-- bg repeat : no repeat  -->
-    <p style="background-image: url('smallBg.png'); background-repeat: no-repeat;">
+    <p style="background-image: url('images/smallBg.png'); background-repeat: no-repeat;">
         You can specify background images<br />
         for any visible HTML element.<br />
         In this example, the background image<br />
@@ -126,7 +126,7 @@
     </p>
 
 
-    <p style="background-image: url('smallBg.png'); background-repeat: no-repeat; background-size: cover;">
+    <p style="background-image: url('images/smallBg.png'); background-repeat: no-repeat; background-size: cover;">
         You can specify background images<br />
         for any visible HTML element.<br />
         In this example, the background image<br />
@@ -146,8 +146,8 @@
     <!-- picture element -->
     <picture>
       <source media="(min-width: 900px)" srcset="https://www.w3schools.com/html/workplace.jpg">
-      <source media="(min-width: 500px)" srcset="background.jpg">
-      <img src="smallBg.png" style="width:auto;">
+      <source media="(min-width: 500px)" srcset="images/background.jpg">
+      <img src="images/smallBg.png" style="width:auto;">
     </picture>
 
     <h2>When to use the Picture Element</h2>
@@ -160,8 +160,8 @@
     Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements. -->
 
       <picture>
-        <source srcset="smallBg.png">
-        <source srcset="background.jpg">
+        <source srcset="images/smallBg.png">
+        <source srcset="images/background.jpg">
         <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
       </picture>      
 
