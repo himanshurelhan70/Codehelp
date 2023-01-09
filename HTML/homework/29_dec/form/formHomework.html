@@ -4,57 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>CodeHelp - Contact Us</title>
 </head>
 <body>
     <h1>Welcome to CodeHelp</h1>
 
     <h2>Contact Us Form</h2>
 
-    <form action="#">
-        <label for="userName">Name</label>
-        <input type="text" name="userName"  placeholder="Enter Your Name">
-        <br/>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Contact Us</legend>
 
-        <label for="email">Email</label>
-        <input type="email" name="userEmail"  placeholder="Enter Your Email">
-        <br/>
-
-        <label for="userNumber">Contact Number</label>
-        <input type="number" name="userNumber"  placeholder="Enter Contact Number">
-        <br/>
-
-        <label for="userGender">Gender</label>
-        <select name="" id="">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
-        <br/>
-
-        <label for="userDob">Date Of Birth</label>
-        <input type="date" name="userDob">
-        <br/>
-
-        <label for="userRating">Rating</label>
-        <input type="radio" name="userRating"> 1
-        <input type="radio" name="userRating"> 2
-        <input type="radio" name="userRating"> 3
-        <input type="radio" name="userRating"> 4
-        <input type="radio" name="userRating"> 5
-        <br/>
-
-        <label for="userMessage">Enter Your Message</label> <br/>
-        <textarea name="userMessage" id="" cols="50" rows="10" placeholder="Enter Your Message"></textarea>
-        <br/>
-
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
+            <label for="userName">Name</label>
+            <input type="text" id="userName" name="name" placeholder="Enter Your Name">
+            <br/>
+    
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" name="email" placeholder="Enter Your Email">
+            <br/>
+    
+            <label for="userNumber">Contact</label>
+            <input type="number" id="userNumber" name="number" placeholder="Enter Contact Number">
+            <br/>
+    
+            <label for="userGender">Gender</label>
+            <select id="userGender" name="gender">
+                <option value="" selected hidden>Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br/>
+    
+            <label for="userDob">Date Of Birth</label>
+            <input type="date" id="userDob" name="dob">
+            <br/>
+    
+            <!-- /// rating -->
+            <span>Rating</span>
+    
+            <input type="radio" id="rating1" name="rating" value="1">
+            <label for="rating1">1</label>
+    
+            <input type="radio" id="rating2" name="rating" value="2">
+            <label for="rating2">2</label>
+    
+            <input type="radio" id="rating3" name="rating" value="3">
+            <label for="rating3">3</label>
+    
+            <input type="radio" id="rating4" name="rating" value="4">
+            <label for="rating4">4</label>
+    
+            <input type="radio" id="rating5" name="rating" value="5">
+            <label for="rating5">5</label>
+            <br/>
+            <!-- ///// -->
+    
+            <label for="userMessage">Enter Your Message</label> <br/>
+            <textarea id="userMessage" name="message" cols="50" rows="10" placeholder="Enter Your Message"></textarea>
+            <br/>
+    
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset"> 
+    
+            <!-- button without type and 
+                button with type="submit" both will work for submitting the form-->
+            <!-- <button>button-type = ""</button>
+            <button type="submit">button-type = submit</button> -->
+    
+    
+            <!-- but if you specially mention the type="button" to 
+                any of them, it will not work for submitting the form-->
+            <!-- <input type="button" name="" id="" value="Input-type = button">
+            <button type="button">button-type = button</button> -->
+            
+        </fieldset>
     </form>
+       
 
-    <br/>
+    <br />
 
-    <img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="youtube image" width="60px"/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" alt="instagram image" width="60px">
-    <img src="https://cdn-icons-png.flaticon.com/512/355/355977.png" alt="telegram image" width="60px">
+    <footer>
+        <a href="https://www.youtube.com" target="_blank">
+            <img 
+            src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" 
+            alt="Youtube" 
+            width="40"
+            height="40" />
+        </a>
+    
+        <a href="https://www.instagram.com" target="_blank">
+            <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" 
+            alt="Instagram" 
+            width="40"
+            height="40" />
+        </a>
+       
+        <a href="https://www.telegram.com" target="_blank">
+            <img 
+            src="https://cdn-icons-png.flaticon.com/512/355/355977.png" 
+            alt="Telegram" 
+            width="40"
+            height="40" />
+        </a>
+    </footer>
 </body>
 </html>
