@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe 
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+    title="It's a map"
+    width="500"
+    height="500"
+    frameborder="0"
+    >
+    </iframe>
+
+    <h2>Iframe - Target for a Link</h2>
+
+    <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" 
+    title="Iframe Example"
+    height="300px" 
+    width="100%" 
+    frameborder="0"
+    name="iframe_a" 
+    >
+    </iframe>
+
+    <p>
+        <a href="https://www.wikipedia.org/" target="iframe_a">Wikipedia.org</a>
+    </p>
+
+    <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+</body>
+</html>
