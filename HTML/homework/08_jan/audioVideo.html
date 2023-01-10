@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //////// adding audio  -->
+    <audio src="rain.wav" controls autoplay muted loop>
+
+    </audio>
+
+    <br>
+
+    <!-- another method -->
+    <audio controls autoplay muted loop >
+        <source src="music.mp3" type="audio/mpeg">
+        <source src="rain.ogg" type="audio/ogg">
+        <source src="rain.wav" type="audio/wav">
+        Your browser doesn't support audio element
+    </audio>
+
+    <br><br><br>
+
+    <!-- //////// adding video -->
+    <video 
+    src="video.mp4" 
+    controls autoplay muted loop 
+    width="500" height="275"
+    >
+
+    </video>
+
+    <!-- another way -->
+    <video 
+    controls muted loop 
+    width="500" height="275"
+    poster="thumbnail.png"
+    >
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        <source src="video.webm" type="video/webm">
+        Your browser doesn't support video element
+    </video>
+</body>
+</html>

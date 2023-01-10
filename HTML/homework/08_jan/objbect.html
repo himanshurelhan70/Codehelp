@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- object -->
+    <h2>Object element</h2>
+    <!-- html page inside object -->
+    <object 
+    width="500"
+    height="200"
+    data="audioVideo.html" 
+    type=""
+    >
+    Alternative Text
+    </object>
+
+    <br> <br> <br> <br> <br> <br>
+
+    <!-- Image inside object -->
+    <object 
+    width="300"
+    height="300"
+    data="thumbnail.png" 
+    type="image/png"
+    >
+    Alternative Text
+    </object>
+
+    <!-- embed -->
+    <br> <br> <br> <br> <br> <br>
+    <h2>Embed element</h2>
+    <!-- html page inside embed -->
+    
+    <embed 
+    width="500"
+    height="200"
+    src="audioVideo.html" 
+    type=""
+    >
+
+    <br> <br> <br> <br> <br> <br>
+    
+    <!-- Image inside embed -->
+
+    <embed 
+    width="300"
+    height="300"
+    src="thumbnail.png" 
+    type=""
+    >
+
+
+    <!-- //// we can also use them as pdf reader -->
+    <br> <br> <br> <br> <br> <br>
+
+    <object 
+    width="500"
+    height="300"
+    data="Lecture1.pdf" 
+    type="application/pdf"
+    >
+    Lecture1 notes
+    </object>
+
+    <br> <br> <br> <br> <br> <br>
+
+    <embed 
+    src="Lecture1.pdf" 
+    type="application/pdf"
+    width="500"
+    height="300"
+    >
+
+    <br> <br> <br> <br> <br> <br> <br>
+
+
+    <h2>There are better ways for display pdf better than object and embed</h2>
+    <h3>anchor tag but it will open the downloadbale pdf in the browser</h3>
+    <a href="Lecture1.pdf">
+        click here
+    </a>
+
+    <br> <br> <br> <br> <br> <br> <br>
+
+    <h3>iframe tag it will open the downloadbale pdf in the html document itself</h3>
+    <iframe 
+        src="Lecture1.pdf" 
+        frameborder="0"
+        width="500"
+        height="500"
+    >
+    </iframe>
+
+    <br> <br> <br> <br> <br> <br> <br>
+    <h2>undownloable pdf</h2> 
+    <iframe 
+        src="Lecture1.pdf#toolbar=0" 
+        frameborder="0"
+        width="500"
+        height="500">
+    </iframe>
+
+    <br> <br> <br> <br> <br> <br> <br>
+
+    <div height="500">
+        <a href="Lecture1.pdf#toolbar=0">
+            click here
+        </a>
+    </div> 
+
+    
+
+
+</body>
+</html>
