@@ -6,105 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - CodeHelp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body{
-            background-color: #fefefe;
-            font-family: 'Rubik', sans-serif;
-        }
-
-        .container{
-            max-width: 1300px;
-            height: 100vh;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 0 auto;
-
-        }
-
-        .thumbnail-wrapper{
-            display: block;
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .thumbnail-wrapper .thumbnail{
-            border-radius: 7px;
-            max-width: 400px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
-                        0px 0px 6px 0px rgba(0, 0, 0, 0.1);
-        }
-
-
-        .thumbnail .image-div{
-            margin-bottom: 16px;
-        }
-
-        .thumbnail .image-div img{
-            width: 100%;
-            border-radius: 7px;
-        }
-        
-        .thumbnail .text-div .course-name{
-            font-weight: 600;
-            line-height: 32px;
-            margin-bottom: 8px;
-        }
-
-        .thumbnail .text-div .line-break{
-            width: 75%;
-            height: 2px;
-            background-color: rgb(237, 237, 237, 0.95);
-            border: none;
-        }
-
-        .thumbnail .text-div .price-div{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 16px;
-        }
-
-        .thumbnail .text-div .price-div .current-price{
-            color: rgb(102 116 204); 
-            font-weight: 700;
-        }
-
-        .thumbnail .text-div .price-div .actual-price{
-            color: rgb(119 124 133);
-            font-weight: 700;
-            text-decoration: line-through;
-
-        }
-
-        .thumbnail .text-div .price-div .discount{
-            color: #fff;
-            background-color: rgb(29 209 161);
-            font-size: 14px;
-            font-weight: 600;
-            padding: 5px 8px;
-            border-radius: 5px;
-            letter-spacing: -0.5px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/card.css">
 </head>
 <body>
 
     <div class="container">
 
-        <a class="thumbnail-wrapper" target="_blank" href="https://www.thecodehelp.in/course/web-development-bootcamp">
-            <div class="thumbnail">
+        <a class="card-wrapper" target="_blank" href="https://www.thecodehelp.in/course/web-development-bootcamp">
+            <div class="card">
                 <div class="image-div">
                     <img src="images/thumbnail-1.jpg" alt="Web Dev course image">
                 </div>
@@ -114,16 +23,16 @@
                     <hr class="line-break"> 
     
                     <div class="price-div">
-                        <p class="current-price">&#8377;0000</p>
-                        <p class="actual-price">&#8377;6999</p>
-                        <p class="discount">100% off</p>
+                        <p class="current-price">&#8377;4500</p>
+                        <p class="actual-price"><s>&#8377;6999</s></p>
+                        <p class="discount">42% off</p>
                     </div>
                 </div>
             </div>
         </a>
 
-        <a class="thumbnail-wrapper" target="_blank" href="https://www.thecodehelp.in/course/data-structures-bootcamp">
-            <div class="thumbnail">
+        <a class="card-wrapper" target="_blank" href="https://www.thecodehelp.in/course/data-structures-bootcamp">
+            <div class="card">
                 <div class="image-div">
                     <img src="images/thumbnail-2.jpg" alt="DSA course image">
                 </div>
@@ -133,16 +42,16 @@
                     <hr class="line-break"> 
     
                     <div class="price-div">
-                        <p class="current-price">&#8377;0000</p>
-                        <p class="actual-price">&#8377;6999</p>
-                        <p class="discount">100% off</p>
+                        <p class="current-price">&#8377;3500</p>
+                        <p class="actual-price"><s>&#8377;7000</s></p>
+                        <p class="discount">50% off</p>
                     </div>
                 </div>
             </div>    
         </a>
     
-        <a class="thumbnail-wrapper" target="_blank" href="https://www.thecodehelp.in/course/cracking-object-oriented-design-interviews">
-            <div class="thumbnail">
+        <a class="card-wrapper" target="_blank" href="https://www.thecodehelp.in/course/cracking-object-oriented-design-interviews">
+            <div class="card">
                 <div class="image-div">
                     <img src="images/thumbnail-3.jpg" alt="oops course image">
                 </div>
@@ -152,9 +61,9 @@
                     <hr class="line-break"> 
     
                     <div class="price-div">
-                        <p class="current-price">&#8377;0000</p>
-                        <p class="actual-price">&#8377;6999</p>
-                        <p class="discount">100% off</p>
+                        <p class="current-price">&#8377;555</p>
+                        <p class="actual-price"><s>&#8377;999</s></p>
+                        <p class="discount">44% off</p>
                     </div>
                 </div>
             </div>    
