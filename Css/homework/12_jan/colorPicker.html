@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            max-width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #efefef;
+        }
+
+        .container h1{
+            margin-bottom: 30px;
+        }
+
+        .container h2{
+            margin-bottom: 20px;
+        }
+
+        .container #output-div{
+            width: auto;
+            height: 50px;
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            color: #000;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5) inset,
+            0px 0px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+   <div class="container">
+        <h1>Color Picker</h1>
+        <h2>Choose any color to generate its hex code</h2>
+        
+        <input type="color" id="colorPicker" onchange="calculateColor()">
+
+        <div id="output-div">
+            <h2 id="result">
+                #000000
+            </h2>
+        </div>
+   </div>
+    
+    <script>
+        const colorPicker = document.getElementById("colorPicker");
+        const result = document.getElementById("result");
+
+        console.log(colorPicker);
+
+        function calculateColor(){
+            const value = colorPicker.value;
+            result.innerHTML = value;
+            result.style.color = value;
+        }
+    </script>
+</body>
+</html>
