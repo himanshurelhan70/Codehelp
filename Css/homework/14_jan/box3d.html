@@ -5,73 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D-box</title>
-
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .wrapper{
-            width: 100vw;
-            height: 100vh;
-            background-color: rgb(239, 130, 130);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            perspective: 500px;
-        }
-
-        .box{
-            width: 200px;
-            height: 200px;
-            position: relative;
-            /* background-color: red; */
-            transform-style: preserve-3d;
-           
-        }
-
-        .side{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            transform-style: preserve-3d;
-            background-color: rgba(117, 216, 255, 0.1);
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8) inset;
-        }
-
-        .left{
-            transform: rotateY(90deg) translateZ(-100px);
-            background-color: red;
-        }
-
-        .right{
-            transform: rotateY(90deg) translateZ(100px);
-            background-color: blue;
-        }
-
-        .top{
-            transform: rotateX(90deg) translateZ(100px);
-            background-color: green;
-        }
-
-        .bottom{
-            transform: rotateX(90deg) translateZ(-100px);
-            background-color: purple;
-        }
-
-        .front{
-            transform: translateZ(100px);
-            background-color: rgb(211, 255, 130, 0.5);
-        }
-
-        .back{
-            transform: translateZ(-100px);
-            background-color: rgba(160, 21, 21, 0.5);
-        }
-    </style>
+    <link rel="stylesheet" href="css/box3d.css">
 </head>
 <body>
 
