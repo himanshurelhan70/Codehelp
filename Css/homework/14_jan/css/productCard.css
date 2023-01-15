@@ -20,8 +20,8 @@ html{
 
 
 .wrapper{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background-color: var(--cream);
     display: flex;
     justify-content: center;
@@ -34,6 +34,7 @@ html{
     border-radius: 20px;
     box-shadow: 0px -1px 20px -5px rgba(0, 0, 0, 0.5);
     /* background-color: red; */
+    margin: 1rem 2rem;
 }
 
 .card .img-div{
@@ -42,11 +43,15 @@ html{
     /* background-color: green; */
 }
 
-.card .img-div img{
+.card .img-div .desktop-img, .mobile-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
+}
+
+.card .img-div .mobile-img{
+    display: none;
 }
 
 .card .text-div{
@@ -102,7 +107,7 @@ html{
     border: none;
     border-radius: 10px;
     padding: 0.9rem 0;
-    margin: 1.6rem 0;
+    margin-top: 1.6rem;
     cursor: pointer;
     transition: all 0.1s;
 }
@@ -113,4 +118,102 @@ html{
 
 .card .text-div .product-btn:hover{
     background-color: var(--darkGreen);
+}
+
+
+/* /////////// Responsive ///// */
+@media screen and (max-width: 650px) {
+
+    .card{
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .card .img-div, .card .text-div{
+        width: 100%;
+    }
+
+    .card .img-div{
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .card .img-div .desktop-img{
+        display: none;
+    }
+
+    .card .img-div .mobile-img{
+        display: block;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .card .text-div{
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .card .text-div .product-title{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 350px){
+    .card .text-div{
+        padding: 1rem 1.3rem;
+    }
+
+    .card .text-div .product-title{
+        font-size: 1.5rem;
+    }
+
+    .card .text-div .product-desc{
+        font-size: 0.9rem;
+    }
+
+    .card .text-div .product-btn{
+        margin-top: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1900px){
+    .card{
+        max-width: 1200px ;
+    }
+    
+    .card .text-div{
+        padding: 4rem  2.5rem;
+    }
+
+    .card .text-div .product{
+        font-size: 2rem;
+     }
+
+     .card .text-div .product-title{
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-top: 2.5rem;
+     }
+
+     .card .text-div .product-desc{
+        width: 100%;
+        font-size: 2rem;
+        margin: 2.5rem 0;
+     }
+
+     .card .text-div .product-price .cur-price{
+        font-size: 4.5rem;
+        margin-right: 1.8rem;
+     }
+
+     .card .text-div .product-price .old-price{
+        font-size: 2rem;
+     }
+
+     .card .text-div .product-btn{
+        font-size: 2rem;
+        padding: 1.8rem 0;
+     }
+
+     .card .text-div .product-btn img{
+        width: 2rem;
+     }
 }
