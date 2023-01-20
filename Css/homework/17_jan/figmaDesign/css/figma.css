@@ -30,8 +30,9 @@ a{
 }
 
 .wrapper{
-    max-width: 1300px;
-    margin: 25px auto;
+    max-width: 135rem;
+    margin: 2.5rem auto;
+    padding: 2rem 2.5rem;
 }
 
 
@@ -64,21 +65,21 @@ header nav ul li a{
     color: var(--navColor);
     font-weight: 600;
     font-size: 1.8rem;
-    transition: all 0.3s;
+    transition: color 0.3s;
 }
 
 header nav ul li a::after{
     content: "";
     display: block;
     width: 75%;
-    height: 1px;
+    height: 0.1rem;
     position: absolute;
-    bottom: -5px;
+    bottom: -0.5rem;
     left: 50%;
     transform: translate(-50%);
     background-color: var(--blue);
     opacity: 0;
-    transition: all 0.3s;
+    transition: opacity 0.3s;
 }
 
 header nav ul li a:hover{
@@ -89,7 +90,7 @@ header nav ul li a:hover::after{
     opacity: 1;
 }
 
-header button{
+header .btn-div button{
     width: 16.5rem;
     height: 5.4rem;
     font-family: inherit;
@@ -98,11 +99,11 @@ header button{
     color: var(--white);
     background-color: var(--blue);
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     transition: all 0.2s;
 }
 
-header button:hover{
+header .btn-div button:hover{
     background-color: #3b5998;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -148,7 +149,7 @@ header button:hover{
     bottom: 0;
     left: 0;
     width: 90%;
-    height: 1px;
+    height: 0.1rem;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -169,7 +170,7 @@ header button:hover{
 /* ////// footer  */
 footer{
     display: grid;
-    border-top: 2px solid #E1E2E4;
+    border-top: 0.2rem solid #E1E2E4;
     grid-template-columns: repeat(4, 1fr);
     padding: 5rem 0 4rem;
 }
@@ -180,7 +181,7 @@ footer h4{
     color: var(--blue);
     text-transform: uppercase;
     line-height: 3.2rem;
-    letter-spacing: 3px;
+    letter-spacing: 0.3rem;
     margin-bottom: 1.4rem;
 }
 
@@ -218,7 +219,7 @@ footer .menu-div ul li a{
     font-size: 1.6rem;
     line-height: 3.2rem;
     color: #999;
-    transition: all 0.2s;
+    transition: color 0.2s;
     text-transform: capitalize;
 }
 
@@ -236,11 +237,11 @@ footer .social-div a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
     border-radius: 50%;
     background-color: var(--blue);
-    transition: all 0.2s;
+    transition: background-color 0.2s;
 }
 
 footer .social-div a.facebook:hover{
@@ -253,4 +254,20 @@ footer .social-div a.twitter:hover{
 
 footer .social-div a.instagram:hover{
     background-color: #c13584;
+}
+
+@media screen and (max-width: 1100px){
+    .section{
+        flex-direction: column; 
+        align-items: start;
+    }
+
+    .section .text-div{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    #section2 .text-div{
+        order: 0;
+    }
 }
