@@ -310,7 +310,6 @@ header .nav-div ul li a:hover{
     filter: brightness(0.5);
     position: relative;
     transition: all 0.5s;
-    z-index: ;
 }
 
 .project-section .project-container .project-card::before{
