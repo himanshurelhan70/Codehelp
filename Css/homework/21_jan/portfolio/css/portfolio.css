@@ -310,6 +310,7 @@ header .nav-div ul li a:hover{
     filter: brightness(0.5);
     position: relative;
     transition: all 0.5s;
+    z-index: ;
 }
 
 .project-section .project-container .project-card::before{
@@ -323,6 +324,7 @@ header .nav-div ul li a:hover{
     transform: scaleX(0);
     transform-origin: left;
     transition: all 0.5s;
+    z-index: -1;
 }
 
 .project-section .project-container .project-card:hover{
@@ -350,3 +352,43 @@ header .nav-div ul li a:hover{
     background-image: url('../images/projects/Project4.png');
 }
 
+.project-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.project-card .project-content{
+    width: 40%;
+    color: #fff;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
+
+.project-card .project-content h2{
+    font-size: 5rem;
+}
+
+.project-card .project-content p{
+    font-style: italic;
+}
+
+.project-card .project-content .project-icons img{
+    width: 5rem;
+}
+
+.project-card .project-content .project-buttons{
+    display:flex;
+    gap: 1rem;
+}
+
+.project-card .project-content .project-buttons img{
+    width: 4rem;
+}
