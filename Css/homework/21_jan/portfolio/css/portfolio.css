@@ -449,70 +449,159 @@ header{
     }
 
 /* //////////////// skills ///////////////// */
+.skill-section{
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 0 24rem;
+    margin-top: 16rem;
+}
+
 .skill-section-content{
-    width: 1200px;
     display: flex;
-    align-items: center;
-    gap: 5rem;
-    padding: 8rem 0;
-    margin: 0 auto;
-}
-
-.skill-section-content .skill-section-left{
-    width: 50%;
-}
-
-.skill-section-content .skill-section-left h2{
-    font-size: 5rem;
-    color: var(--clr-orange);
-}
-
-.skill-section-content .skill-section-left h2 span{
-    font-size: 7rem;
-}
-
-.skill-section-content .skill-section-left p{
-    font-size: 1.5rem;
-    margin-top: 2rem;
-}
-
-.skill-section-content .skill-section-right{
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 3rem;
-    width: 50%;
 }
 
-.skill-section-content .skill-section-right img{
-    width: 9rem;
-    transition: all 0.4s;
+    /* //// fadded text */
+
+    .skill-fadded-text{
+        font-size: 24rem;
+        font-weight: 700;
+        color: var(--clr-light-gray);
+        position: absolute;
+        bottom: -8%;
+        right: -17%;
+        overflow-y: hidden;
+        user-select: none;
+        text-transform: capitalize;
+    }
+
+    /* //// left */
+    .skill-section-left{
+        width: 50%;
+    }
+
+    .skill-section-heading{
+        font-size: 5rem;
+        color: var(--clr-orange);
+        line-height: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .skill-section-heading span{
+        font-size: 8rem;
+        font-weight: 700;
+    }
+
+    .skill-section-left p{
+        width: 85%;
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+        text-align: justify;
+    }
+
+    /* ///// right */
+
+    .skill-section-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3.2rem;
+        width: 50%;
+        position: relative;
+    }
+
+    .skill-section-right img{
+        width: 9rem;
+        transition: all 0.5s;
+    }
+
+    .skill-section-right img:hover{
+        transform: scale(1.2);
+    }
+
+    .skill-section-right .blob-style{
+        width: 36rem;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: blobAnimate 3s linear infinite;
+    }
+
+    @keyframes blobAnimate{
+        50% {
+            top: 54%;
+            left: 46%;
+        }
+    }
+ 
+
+/* ////////////////////// Contact section  */
+
+.contact-section {
+    background: var(--clr-light-gray);
 }
 
-.skill-section-content .skill-section-right img:hover{
-    transform: scale(1.2);
-}
+    .contact-section-heading{
+        font-size: 8rem;
+        font-weight: 700;
+        color: var(--clr-orange);
+        padding-top: 3.2rem;
+    }
 
-.contact-section h2{
-    font-size: 5rem;
-    color: var(--clr-orange);
-}
+    .contact-section-sub-heading{
+        font-size: 4.8rem;
+        font-weight: 700; 
+        color: #343d68aa;
+        text-transform: capitalize;
+    }
 
-.contact-section h3{
-    font-size: 4rem;
-    color: #707692;
-}
+    .contact-form{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        padding-bottom: 3.2rem;
+        margin: 5.5rem auto 0;
+    }
 
-.contact-section input,
-.contact-section textarea{
-    width: 80%;
-    display: block;
-    padding: 1.5rem 3rem;
-    border-radius: 0.5rem;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
+    .form-field input,
+    .form-field textarea{
+        display: block;
+        width: 100%;
+        height: 4.2rem;
+        font-family: inherit;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 0 3.2rem;
+        background: #ffffff97;
+        border: none;
+        border-radius: 0.5rem;
+        box-shadow: 2px 2px 10px #1f1f1f;
+        outline: none;
+    }
+
+    .form-field textarea{
+        height: auto;
+        padding-top: 1.6rem;
+        resize: none;
+    }
+
+    .contact-form .form-btn{
+        font-size: 2.4rem;
+        border: none;
+        margin: 1.6rem 0;
+    }
+
+    .contact-form .form-btn:hover{
+        scale: 0.9;
+    }
+
+    .form-btn .icon{
+        padding: 0 1.6rem;
+    }
 
 footer{
     background-color: #343D68;

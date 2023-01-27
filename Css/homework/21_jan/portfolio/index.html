@@ -132,9 +132,7 @@
 
             <h2>Breaking Copyrights</h2>
 
-            <p>
-              A platform to download copyrights free youtube music
-            </p>
+            <p>A platform to download copyrights free youtube music</p>
 
             <div class="project-buttons">
               <button class="btn">Read More</button>
@@ -196,7 +194,8 @@
             <h2>Granit</h2>
 
             <p>
-              A architectural website to plan your building or home (Hebrew Language)
+              A architectural website to plan your building or home (Hebrew
+              Language)
             </p>
 
             <div class="project-buttons">
@@ -216,10 +215,13 @@
     </section>
 
     <!-- ////////////////// skills section //////// -->
-    <section class="skill-section">
-      <div class="skill-section-content">
+    <section class="skill-section" id="skills">
+      <div class="skill-section-content container">
+        <div class="skill-fadded-text">skills</div>
         <div class="skill-section-left">
-          <h2><span>M</span>e and <br />MyTech Stack</h2>
+          <h2 class="skill-section-heading">
+            <span>M</span>e and <br />MyTech Stack
+          </h2>
 
           <p>
             Hi Everyone My name is John Doe I am a Full Stack Web Developer I
@@ -242,6 +244,11 @@
         </div>
 
         <div class="skill-section-right">
+          <img
+            src="images/userAsset/blob vector.png"
+            class="blob-style"
+            alt=""
+          />
           <img src="images/stack/HTML.png" alt="" />
           <img src="images/stack/CSS.png" alt="" />
           <img src="images/stack/Javascript.svg" alt="" />
@@ -266,25 +273,47 @@
       </div>
     </section>
 
-    <section class="contact-section">
-      <h2>Contact Me</h2>
-      <h3>Questions, Thoughts, Or Just Want To Say Hello?</h3>
+    <!-- //////////////// contact section ////////// -->
+    <section class="contact-section" id="contact">
+      <div class="contact-section-content container">
+        <h2 class="contact-section-heading">Contact Me</h2>
+        <h3 class="contact-section-sub-heading">
+          Questions, thoughts, or just want to say hello?
+        </h3>
 
-      <form action="#">
-        <input type="text" placeholder="Enter your name" />
-        <input type="email" placeholder="Enter your email address" />
-        <input type="text" placeholder="Enter your subject" />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Enter your message"
-        ></textarea>
-        <button class="btn">Send Message</button>
-      </form>
+        <form action="#" class="contact-form">
+          <div class="form-field">
+            <input type="text" placeholder="Enter your name" />
+          </div>
+
+          <div class="form-field">
+            <input type="email" placeholder="Enter your email address" />
+          </div>
+
+          <div class="form-field">
+            <input type="text" placeholder="Enter your subject" />
+          </div>
+
+          <div class="form-field">
+            <textarea
+              name=""
+              id="my-textarea"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"></textarea>
+          </div>
+
+          <div class="button-field">
+            <button type="submit" class="btn form-btn">
+              Send Message
+              <i class="fa fa-paper-plane icon"></i>
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
 
+    <!-- //////////// footer ///////////// -->
     <footer>
       <nav class="nav-div">
         <ul>
