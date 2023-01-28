@@ -603,10 +603,53 @@ header{
         padding: 0 1.6rem;
     }
 
+/* ///////////// footer ////// */
 footer{
-    background-color: #343D68;
-    padding: 5rem;
-    display: flex;
-    justify-content: space-between;
     color: #fff;
+    background-color: var(--clr-dark-blue);
+    padding: 8rem 0;
+    position: relative;
 }
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 2.5rem;
+    }
+
+    .footer-fadded-text{
+        font-size: 8rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: #535c87;
+        user-select: none;
+    }
+
+    .footer-content .nav-div ul{
+        gap: 2rem;
+    }
+
+    .footer-content .nav-div ul li a{
+        font-size: 1.6rem;
+    }
+
+    .footer-content .nav-div ul li a:hover{
+        font-weight: 500;
+        color: var(--clr-orange);
+    }
+
+    .social-icons{
+        display: flex;
+        gap: 1.6rem;
+    }
+
+    .social-icons .icon{
+        font-size: 3.5rem;
+        transition: all 0.4s;
+    }
+
+    .social-icons .icon:hover{
+        color: var(--clr-orange);
+    }

@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>John Doe</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -38,7 +39,7 @@
 
       <div class="hero-section-left">
         <h1 class="name">Hi! John Doe</h1>
-        <p class="profession">I am a <span class="role">Web Developer</span></p>
+        <p class="profession">I am a <span class="role"></span></p>
         <p class="desc">
           I’m a software developer and here is my portfolio website. Here you’ll
           learn about my journey as a software developer.
@@ -105,11 +106,11 @@
             <div class="project-buttons">
               <button class="btn">Read More</button>
               <a href="#">
-                <i class="fa fa-github icons"></i>
+                <i class="fa-brands fa-github icons"></i>
               </a>
 
               <a href="#">
-                <i class="fa fa-link icons"></i>
+                <i class="fa-solid fa-link icons"></i>
               </a>
             </div>
           </div>
@@ -137,11 +138,11 @@
             <div class="project-buttons">
               <button class="btn">Read More</button>
               <a href="#">
-                <i class="fa fa-github icons"></i>
+                <i class="fa-brands fa-github icons"></i>
               </a>
 
               <a href="#">
-                <i class="fa fa-link icons"></i>
+                <i class="fa-solid fa-link icons"></i>
               </a>
             </div>
           </div>
@@ -170,11 +171,11 @@
             <div class="project-buttons">
               <button class="btn">Read More</button>
               <a href="#">
-                <i class="fa fa-github icons"></i>
+                <i class="fa-brands fa-github icons"></i>
               </a>
 
               <a href="#">
-                <i class="fa fa-link icons"></i>
+                <i class="fa-solid fa-link icons"></i>
               </a>
             </div>
           </div>
@@ -201,11 +202,11 @@
             <div class="project-buttons">
               <button class="btn">Read More</button>
               <a href="#">
-                <i class="fa fa-github icons"></i>
+                <i class="fa-brands fa-github icons"></i>
               </a>
 
               <a href="#">
-                <i class="fa fa-link icons"></i>
+                <i class="fa-solid fa-link icons"></i>
               </a>
             </div>
           </div>
@@ -300,13 +301,14 @@
               id="my-textarea"
               cols="30"
               rows="10"
-              placeholder="Enter your message"></textarea>
+              placeholder="Enter your message"
+            ></textarea>
           </div>
 
           <div class="button-field">
             <button type="submit" class="btn form-btn">
               Send Message
-              <i class="fa fa-paper-plane icon"></i>
+              <i class="fa-solid fa-paper-plane icon"></i>
             </button>
           </div>
         </form>
@@ -315,23 +317,58 @@
 
     <!-- //////////// footer ///////////// -->
     <footer>
-      <nav class="nav-div">
-        <ul>
-          <li><a href="">projects</a></li>
-          <li><a href="">skills</a></li>
-          <li><a href="">contact me</a></li>
-        </ul>
-      </nav>
+      <div class="footer-content container">
+        <div class="footer-fadded-text">John Doe</div>
 
-      <div>
-        <a href="">
-          <i class="fa fa-linkedin"></i>
-          <i class="fa fa-github"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-message"></i>
-        </a>
+        <nav class="nav-div">
+          <ul>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">contact me</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-icons">
+          <a href="#">
+            <i class="fa-brands fa-linkedin icon"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-github icon"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-twitter icon"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram icon"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-regular fa-envelope icon"></i>
+          </a>
+        </div>
       </div>
     </footer>
+    <!-- ///// -->
+
+    <!-- /////// scripts /// -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Full Stack Developer",
+          "Web Developer",
+          "UI-UX Designer",
+          "Backend Developer",
+          "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
   </body>
 </html>
