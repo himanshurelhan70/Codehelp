@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    background: rgb(52 65 81);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(52 65 81);
+}
+
+.app_name{
+    font-size: 20px;
+    color: rgb(3 152 212);
+}
+
+.container{
+    font-size: 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+.container button{
+    font-size: 40px;
+    background: none;
+    border: none;
+    padding: 0 20px;
+}
+
+.container #decre_btn{
+    border-right: 1px solid rgb(191 191 191);
+}
+
+.container #incre_btn{
+    border-left: 1px solid rgb(191 191 191);
+}
+
+.container #value_box{
+    padding: 0 55px;
+}

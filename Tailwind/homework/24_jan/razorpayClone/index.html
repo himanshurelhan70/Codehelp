@@ -27,11 +27,25 @@
         filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
         stroke-opacity: 0 !important;
       }
+      /* // */
+      .companiesList{
+        animation: moveImage 30s linear infinite;
+      }
+
+      @keyframes moveImage{
+        0%{
+          transform: translateY(0);
+        }
+
+        100%{
+          transform: translateY(-50%);
+        }
+      }
     </style>
   </head>
   <body>
     <!-- ////////// navbar starts /////// -->
-    <nav class="bg-deepBlue text-white font-mullish px-8">
+    <nav class="bg-deepBlue text-white font-mullish px-8 overflow-x-hidden">
       <div class="max-w-[1080px] mx-auto flex justify-between items-center">
         <!-- // logo // -->
         <a href="#" class="py-7 pr-7">
@@ -949,6 +963,36 @@
       </section>
       <!-- core section ends -->
  
+
+      <!-- join razorpay section starts -->
+      <section class="font-mullish bg-[#f5f8fe] pt-40 pb-12 -mt-[200px] relative -z-[100]">
+        <div class="max-w-[1080px] mx-auto pt-4 flex">
+          <!-- left part -->
+          <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+            <h2 class="text-2xl text-deepBlue leading-[1.2] font-bold">Join the 50,00,000+ businesses using Razorpay</h2>
+            <div class="w-6 h-1 bg-greenLight mt-4 mb-6"></div>
+            <p class="opacity-80">We make it easier for you to focus on building great products while we work on simplifying 
+              your payments. Become one of us by joining thousands of our happy users and simplify the 
+              online payment experience for your customers.
+            </p>
+            <p class="mt-6 opacity-80">Focus on your business while we handle the complexities of payments for you.</p>
+          </div>
+
+          <!-- right part -->
+          <div class="w-[500px] h-[500px] overflow-y-hidden relative">
+            <img src="images/comanies.png" alt="" 
+            class="w-full h-auto absolute companiesList">
+
+            <div style="background: linear-gradient(180deg, #f4f8ff, #fff0);"
+            class="absolute w-full h-[150px] top-0 z-50"></div>
+
+            <div style="background: linear-gradient(0deg, #f4f8ff, #fff0);"
+            class="absolute w-full h-[150px] bottom-0 z-50"></div>
+          </div>
+        </div>
+      </section>
+      <!-- join razorpay section ends -->
+
     </main>
 
     <!-- feather icons -->
