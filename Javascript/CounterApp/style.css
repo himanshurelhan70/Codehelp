@@ -1,51 +1,71 @@
+:root{
+    --primaryColor : #344151;
+    --secondaryColor : #0398d4;
+    --white : #fff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
 .wrapper{
+    width: 100vw;
     height: 100vh;
-    background: rgb(52 65 81);
+    background: var(--primaryColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
-    font-weight: 700;
-    color: rgb(52 65 81);
+    gap: 4rem;
 }
 
 .app_name{
-    font-size: 20px;
-    color: rgb(3 152 212);
+    font-family: sans-serif;
+    color: var(--secondaryColor);
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .container{
-    font-size: 30px;
-    background: #fff;
+    width: 24rem;
+    color: var(--primaryColor);
+    background: var(--white);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
-    padding: 12px;
-    margin-top: 30px;
+    border-radius: 0.3rem;
+    padding: 1.2rem 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .container button{
-    font-size: 40px;
+    font-size: 2.5rem;
     background: none;
     border: none;
-    padding: 0 20px;
+    outline: none;
+    padding: 0.5rem 2rem;
 }
 
 .container #decre_btn{
-    border-right: 1px solid rgb(191 191 191);
+    border-right: 0.2rem solid #bfbfbf;
 }
 
 .container #incre_btn{
-    border-left: 1px solid rgb(191 191 191);
+    border-left: 0.2rem solid #bfbfbf;
 }
 
-.container #value_box{
-    padding: 0 55px;
+.container #counter_box{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
 }

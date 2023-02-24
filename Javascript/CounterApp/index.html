@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counter App</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <div class="wrapper">
-        <h1 class="app_name">Counter App</h1>
+        <h1 class="app_name">Increment And Decrement</h1>
 
         <div class="container">
-            <button id="decre_btn">-</button>
-            <div id="value_box"></div>
-            <button id="incre_btn">+</button>
+            <button id="decre_btn">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <div id="counter_box"></div>
+
+            <button id="incre_btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
         </div>
     </div>
     
