@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- /// wrapper starts /// -->
+    <div class="wrapper">
+        <div class="red-circle circle"></div>
+        <div class="blue-circle circle"></div>
+
+         <!-- /// card starts /// -->
+        <div class="card">
+            <img src="profile-image.webp" alt="">
+            <h2>Himanshu Relhan</h2>
+            <h3>Website Developer</h3>
+            <div class="buttons-group">
+                <button id="share_btn">
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile
+                </button id="follow_btn">
+                <button>Follow Me</button>
+            </div>
+        </div>
+        <!-- /// card ends /// -->
+    </div>
+    <!-- /// wrapper ends /// -->
+
+    <!-- /// Modal starts /// -->
+    <div class="profile-modal" id="profile_modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2>Share My Profile</h2>
+            <i class="fa-solid fa-xmark" id="modal_close"></i>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3>Share this via</h3>
+            <div class="social-icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /// Modal ends /// -->
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
