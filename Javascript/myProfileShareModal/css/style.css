@@ -334,6 +334,8 @@ a{
 @media (max-width: 850px) {
     .wrapper .card {
       width: 35rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
 
     .card .buttons-group {
