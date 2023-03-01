@@ -8,67 +8,67 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
 
-    <div class="wrapper">
-        <!-- container starts  -->
-        <div class="container">
+    <div class="container">
 
-            <h1>PASSWORD GENERATOR</h1>
+        <h1>Password Generator</h1>
 
-            <!-- display container -->
-            <div class="display-container">
-                <input type="text" placeholder="Password" class="passwordDisplay" 
-                data-passwordDisplay readonly>
+        <div class="display-container">
 
-                <button>
-                    <span data-copyMsg></span> 
-                    <img src="images/copy.svg" alt="copy" width="23" height="23">
-                </button>
-            </div>
-            
-            <!-- input container -->
-            <div class="input-container">
-                <!-- password length container -->
-                <div class="length-container">
-                    <h2>Password Length</h2>
-                    <span data-lengthNumber>7</span>
-                </div>
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
 
-                <!-- slider -->
-                <input type="range" min="1" max="20" step="1" class="slider" data-lengthSlider>
-
-                <!-- checkboxes -->
-                <div>
-                    <input type="checkbox" id="uppercase">
-                    <label for="uppercase">Include Uppercase Letters</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="lowercase">
-                    <label for="lowercase">Include Lowercase Letters</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="numbers">
-                    <label for="numbers">Include Numbers</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="symbols">
-                    <label for="symbols">Include Symbols</label>
-                </div>
-                
-                <!-- strength container -->
-                <div class="strength-container">
-                    <h2>Strength</h2>
-                    <div data-indicator></div>
-                </div>
-
-                <!-- generate password -->
-                <button class="generateButton">GENERATE PASSWORD</button>
-            </div>
+            <button data-copyBtn>
+                <span data-copyMsg></span>
+                <img src="./images/copy.svg" alt="copy" width="23" height="23">
+            </button>
 
         </div>
+
+
+        <div class="input-container">
+
+            <!--password length section-->
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthDisplay>0</p>
+            </div>
+            
+            <!--slider-->
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+            <!-- checkboxes-->
+            <div>
+                <input type="checkbox" id="uppercaseCb">
+                <label for="uppercaseCb">Includes Uppercase letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="lowercaseCb">
+                <label for="lowercaseCb">Includes Lowercase letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="numberCb">
+                <label for="numberCb">Includes Numbers </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbolCb">
+                <label for="symbolCb">Includes Symbols </label>
+            </div>
+
+            <!-- strength section-->
+            <div class="strength-container">
+                <p>Strength</p>
+                <div data-indicator style="width: 30px; height: 30px; background: yellow;"></div>
+            </div>
+
+            <!-- generate password-->
+            <button id="generateButton">Generate Password</button>
+
+        </div>
+
     </div>
     
 
