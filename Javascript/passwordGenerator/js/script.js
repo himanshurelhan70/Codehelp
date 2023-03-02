@@ -1,13 +1,13 @@
 // display
-const passwordDisplay = document.querySelector("[data-passwordDisplay]");
+const passwordDisplay = document.querySelector("[data-password-display]");
 
 // copy password
-const copyBtn = document.querySelector("[data-copyBtn]");
-const copyMsg = document.querySelector("[data-copyMsg]");
+const copyBtn = document.querySelector("[data-copy-btn]");
+const copyMsg = document.querySelector("[data-copy-msg]");
 
 // length
-const lengthSlider = document.querySelector("[data-lengthSlider]");
-const lengthDisplay = document.querySelector("[data-lengthDisplay]");
+const lengthDisplay = document.querySelector("[data-length-display]");
+const lengthSlider = document.querySelector("[data-length-slider]");
 
 // checkboxes
 const uppercaseCb = document.querySelector("#uppercaseCb");
@@ -38,11 +38,10 @@ function handleSlider() {
     lengthSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
 
-    // todo
-    // const min = lengthSlider.min;
-    // const max = lengthSlider.max;
-    // lengthSlider.style.backgroundSize =
-    //   ((passwordLength - min) * 100) / (max - min) + "% 100%";
+    const min = lengthSlider.min;
+    const max = lengthSlider.max;
+    lengthSlider.style.backgroundSize =
+      ((passwordLength - min) * 100) / (max - min) + "% 100%";
 }
 
 handleSlider();
@@ -77,11 +76,19 @@ function countCheckedCb(){
 // copy password
 async function copyContent() {
     try {
-      await navigator.clipboard.writeText(password);
-      copyMsg.innerText = "Copied";
+        // throw error if password is empty
+        if(password === ""){
+            alert('First Generate Password to copy');
+            throw 'Failed'; 
+        }
+
+        await navigator.clipboard.writeText(password);
+        copyMsg.innerText = "Copied";
     } 
-    catch (err) {
-      copyMsg.innerText = "Failed";
+
+    // catch() will only run if any error is thrown by the try block
+    catch (error) {
+      copyMsg.innerText = error;
     }
 
     copyMsg.classList.add("active");
@@ -91,7 +98,8 @@ async function copyContent() {
 }
   
 copyBtn.addEventListener("click", () => {
-    if (password) copyContent();
+    // if (password) copyContent();
+    copyContent();
 });
 
 
@@ -124,8 +132,6 @@ function generateSymbol(){
     return symbols.charAt(randomIndex);
 }
 
-
-
 // calculate password strength
 // set Indicator
 function setIndicator(color){
@@ -157,7 +163,6 @@ function calcStrength(){
     }
 }
 
-
 // Shuffle the array randomly - Fisher Yates algorithm
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -169,7 +174,8 @@ function shuffleArray(array) {
       array[j] = temp;
     }
     let str = "";
-    array.forEach((el) => (str += el));
+    // array.forEach((el) => (str += el));
+    str = array.join("");
     return str;
 }
 
@@ -217,6 +223,6 @@ function generatePassword(){
 
     // calculate strength
     calcStrength();
-} 
+}
 
 generateButton.addEventListener('click', generatePassword);
