@@ -1,0 +1,1 @@
+only written code in browser console
