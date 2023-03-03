@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1 class="app_name">Increment And Decrement</h1>
+
+        <div class="container">
+            <button id="decre_btn">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <div id="counter_box"></div>
+
+            <button id="incre_btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <div class="container_2">
+            <button id="decre_ten_btn">
+                <img src="images/minus-10.png" alt="">
+            </button>
+
+            <button id="reset_btn">
+                Reset
+            </button>
+
+            <button id="incre_ten_btn">
+                <img src="images/plus-10.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <!-- increment and decrement sound -->
+    <audio src="sounds/coin.mp3" id="coin_sound" class="sound" controls></audio>
+    <audio src="sounds/fireball.mp3" id="fireball_sound" class="sound" controls></audio>
+
+    <!-- increment and decrement(by 10) sound   -->
+    <audio src="sounds/pause.mp3" id="pause_sound" class="sound" controls></audio>
+    <audio src="sounds/pipe.mp3" id="pipe_sound" class="sound" controls></audio>
+
+    <!-- reset sound -->
+    <audio src="sounds/stomp.mp3" id="stomp_sound" class="sound" controls></audio>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

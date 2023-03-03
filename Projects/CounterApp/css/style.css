@@ -1,0 +1,123 @@
+:root{
+    --primaryColor : #344151;
+    --secondaryColor : #0398d4;
+    --white : #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.app_name{
+    font-family: sans-serif;
+    color: var(--secondaryColor);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container, .container_2{
+    width: 24rem;
+    color: var(--primaryColor);
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.3rem;
+    padding: 1.2rem 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container button, .container_2 button{
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* decre btn */
+.container #decre_btn, .container_2 #decre_ten_btn{
+    border-right: 0.2rem solid #bfbfbf;
+}
+
+.container #decre_btn:active{
+    color: red;
+}
+
+.container #decre_btn:active > i{
+    scale: 1.2;
+}
+
+/* incre btn */
+.container #incre_btn, .container_2 #incre_ten_btn{
+    border-left: 0.2rem solid #bfbfbf;
+}
+
+.container #incre_btn:active{
+    color: green;
+}
+
+.container #incre_btn:active > i{
+    scale: 1.2;
+}
+
+.container #counter_box{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* //// container 2 */
+
+.container-2 button img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.container_2 #decre_ten_btn:active > img{
+    scale: 1.2;
+}
+
+.container_2 #incre_ten_btn:active > img{
+    scale: 1.2;
+}
+
+.container_2 #reset_btn{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container_2 #reset_btn:active{
+    scale: 0.9;
+    /* translate: 0px 4px; */
+    transition: all 0.1s ease;
+}
+
+/* sound */
+.sound{
+    display: none;
+}
