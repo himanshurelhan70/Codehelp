@@ -169,10 +169,11 @@ button.copy-btn .copy-tooltip.active{
     z-index: 1;
 }
 
+/* 
 .slider:focus{
-    /* outline: 0.3rem solid var(--vb-yellow); */
-    /* border: 0.3rem solid var(--vb-yellow); */
-}
+    outline: 0.3rem solid var(--vb-yellow);
+    border: 0.3rem solid var(--vb-yellow);
+} */
 
 .slider::-webkit-slider-thumb{
     appearance: none;
