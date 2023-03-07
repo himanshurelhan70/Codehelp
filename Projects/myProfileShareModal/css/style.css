@@ -22,7 +22,7 @@
     --btnBg : #ffffff00;
     --btnFocus : #ffffffb9;
 
-    --facebook : #1771e6;
+    --linked-in : #0E76A8;
     --twitter : #1c99e6;
     --instagram : #cb2770;
     --whatsapp : #2fe664;
@@ -235,14 +235,14 @@ a{
     font-size: 2.7rem;
 }
 
-#facebook-icon {
-    color: var(--facebook);
-    border: 1px solid var(--facebook);
+#linked-in-icon {
+    color: var(--linked-in);
+    border: 1px solid var(--linked-in);
 }
 
-#facebook-icon:hover{
+#linked-in-icon:hover{
     color: var(--white);
-    background: var(--facebook);
+    background: var(--linked-in);
 }
 
 #twitter-icon {
