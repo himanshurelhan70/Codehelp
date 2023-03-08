@@ -30,6 +30,10 @@ a{
     color: inherit;
 }
 
+p{
+    line-height: 1.5;
+}
+
 .container{
     max-width: 1250px;
     padding-left: 2.5rem;
@@ -125,6 +129,99 @@ header{
         font-weight: 700;
     }
 
+    .mobile-nav{
+        width: 70%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        color: var(--clr-white);
+        background: #4e45d595;
+        padding: 10rem 0;
+        z-index: 499;
+        display: block;
+        transition: all 0.5s ease;
+        transform-origin: right;
+        -moz-transform-origin: right;
+        -webkit-transform-origin: right;
+        transform: translateX(100%);
+        backdrop-filter: blur(25px);
+    }
+
+    .mobile-nav ul{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .mobile-nav ul li a{
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .mobile-nav.active{
+        transform: translateX(0);
+    }
+
+    .hamburger{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        z-index: 999;
+    }
+
+    .hamburger span{
+        position: absolute;
+        display: block;
+        width: 3rem;
+        height: 3px;
+        background: var(--clr-orange);
+        border-radius: 0.5rem;
+        transition: all 0.4s ease;
+    }
+
+    .hamburger span:last-child{
+        margin: 0;
+    }
+
+    .hamburger span:first-child{
+        top: 0;
+    }
+
+    .hamburger span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger span:last-child{
+        bottom: 0;
+    }
+
+    .hamburger.active{
+        position: fixed;
+    }
+   
+    .hamburger.active span:first-child{
+        width: 3.7rem;
+        transform: rotate(45deg);
+        transform-origin: left;
+    }
+
+    .hamburger.active span:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active span:last-child{
+        width: 3.7rem;
+        transform: rotate(-45deg);
+        transform-origin: left;
+    }
+
+
 
 /* /////////// hero section ////// */
 .hero-section{
@@ -151,6 +248,7 @@ header{
 
     /* hero section left */
     .hero-section .hero-section-left{
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 3.2rem;
@@ -289,6 +387,10 @@ header{
         }
     }
 
+    .hero-section .extra-btn{
+        display: none;
+    }
+
 
 /* ///////////////////// project section //////////////// */
 .project-section{
@@ -315,6 +417,7 @@ header{
         background-image: url('../images/projects/tic-tac-toe.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         box-shadow: 0 0 4rem #1f1f1f;
         position: relative;
     }
@@ -418,6 +521,7 @@ header{
         display:flex;
         gap: 1.6rem;
         align-items: center;
+        margin-top: 1rem;
     }
 
     .project-buttons .icons{
@@ -637,7 +741,7 @@ footer{
     }
 
     .footer-content .nav-div ul li a{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .footer-content .nav-div ul li a:hover{
@@ -658,3 +762,206 @@ footer{
     .social-icons .icon:hover{
         color: var(--clr-orange);
     }
+
+/* media queries */
+@media (max-width: 1360px){
+    .hero-section .faded-text{
+        left: 0;
+    }
+}
+
+@media (max-width: 1250px){
+    .hero-section .faded-text, .skill-fadded-text, .footer-fadded-text{
+        display: none;
+    }
+
+    .hero-section{
+        margin-bottom: 0;
+    }
+
+    .skill-section{
+        padding: 8rem 0 8rem;
+        margin: 1rem 0;
+    }
+
+    .contact-section-sub-heading{
+        font-size: 3.5rem;
+    }
+
+    .contact-form{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1150px){
+    header .nav-div{
+        display: none;
+    }
+
+    .hero-section{
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 5rem;
+    }
+
+    .hero-section .hero-section-left{
+        align-items: center;
+    }
+
+    .hero-section .hero-section-left .desc{
+        text-align: center;
+    }
+
+    .hero-section-right{
+        scale: 0.7;
+    }
+
+    .hero-section .btn{
+        display: none;
+    }
+
+    .hero-section .extra-btn{
+        display: block;
+        margin-top: -2rem;
+    }
+
+    section > h2, 
+    .skill-section-heading span,
+    .contact-section-heading{
+        font-size: 5rem;
+    }
+    
+    .project-section .project-container{
+        gap: 6rem;
+    }
+
+    .project-container .project-card{
+        width: 90%;
+        height: 45rem;
+        margin: 0 auto;
+    }
+
+    .project-content h2{
+        font-size: 4rem;
+    }
+
+    .project-card .project-content{
+        max-width: 90%;
+    }
+
+    .project-card:nth-child(even) .project-content{
+        left: 10%;
+        right: 0;
+    }
+
+    .project-card .project-number{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    .project-container .project-card{
+        width: 95%;
+        height: 35rem;
+    }
+
+    .project-card .btn{
+        padding: 1rem 2rem;
+    }
+
+    .skill-section-content{
+        flex-direction: column;
+    }
+
+    .skill-section-left, .skill-section-right{
+        width: 100%;
+    }
+
+    .skill-section-right img{
+        width: 6rem;
+    }
+
+    .contact-section-content{
+        text-align: center;
+    }
+
+    .contact-section-sub-heading{
+        font-size: 2rem;
+    }
+
+    .contact-form{
+        width: 90%;
+    }
+
+    footer{
+        padding: 1rem 0;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 650px){
+    section > h2, 
+    .skill-section-heading span,
+    .skill-section-heading, 
+    .contact-section-heading {
+        font-size: 3rem;
+    }
+
+    .hero-section{
+        padding-bottom: 0;
+        margin: 2.5rem 0;
+    }
+
+    .hero-section-left .profession, .hero-section-left .name{
+        font-size: 3rem;
+    }
+        
+    .project-container .project-card{
+        height: 30rem;
+    }
+
+    .project-content .project-skills-container img {
+        width: 3rem;
+    }
+
+    .project-card .project-content{
+        padding: 0;
+    }
+
+    .project-content h2{
+        font-size: 2rem;
+    }
+
+    .project-content p {
+        font-size: 1.3rem;
+        max-width: 90%;
+    }
+
+    .project-card .btn{
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .project-buttons .icons{
+        font-size: 3rem;
+    }
+   
+    .project-card:nth-child(n) .project-content{
+        left: 7%;
+    }
+
+    .skill-section{
+        padding: 4rem 0;
+    }
+
+    .contact-form .form-btn{
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
