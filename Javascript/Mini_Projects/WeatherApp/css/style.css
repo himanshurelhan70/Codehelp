@@ -20,3 +20,25 @@ a{
 h1{
     color: red;
 }
+
+button{
+    all: unset;
+}
+
+
+.tab.active-tab{
+    background: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+    background: red;
+}
+
+.grant-location-container,
+.search-form-container,
+.loading-screen-container,
+.weather-info-container{
+    display: none;
+}
+
+.active{
+    display: block;
+}
