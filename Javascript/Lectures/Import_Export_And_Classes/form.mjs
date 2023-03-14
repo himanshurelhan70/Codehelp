@@ -1,6 +1,7 @@
 // default exports - can only be used once in a file
 export default class User{
     #profession = "developer"; //private variable
+    // we can also use _ to create private variables _profession
 
     constructor(name, age){
         this.name = name;
