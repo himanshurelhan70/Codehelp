@@ -1,0 +1,11 @@
+.products{
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid coral;
+    background: pink;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
