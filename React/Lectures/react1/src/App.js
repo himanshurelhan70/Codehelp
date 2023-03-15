@@ -1,5 +1,5 @@
 
-import User from './components/UserData';
+import User from './components/User';
 import Card from './components/Card';
 
 function App() {

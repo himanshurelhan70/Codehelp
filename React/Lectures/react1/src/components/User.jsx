@@ -1,4 +1,4 @@
-import './UserData.css';
+import './User.css';
 
 function UserData(props){
     console.log(props);
