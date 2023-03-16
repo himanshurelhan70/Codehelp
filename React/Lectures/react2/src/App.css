@@ -8,6 +8,8 @@
   min-height: 100vh;
   text-align: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
+  gap: 40px;
 }

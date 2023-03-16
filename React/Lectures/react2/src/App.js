@@ -1,5 +1,7 @@
 import './App.css';
 import Products from './components/Products.jsx';
+import ProductForm from './components/ProductForm';
+import { useState } from 'react';
 
 function App() {
 
@@ -30,9 +32,20 @@ function App() {
     },
   ]
 
+  const [data, setData] = useState(response);
+
+  // we passed this func as a prop to child component
+  function newProductHandler(newProduct){
+    console.log("received ", newProduct, "from child component(ProductForm)");
+
+    // updating data
+    setData([...data, newProduct]);
+  }
+
   return (
     <div className="App">
-      <Products products={response}></Products>
+      <ProductForm newProductHandler={newProductHandler}></ProductForm>
+      <Products products={data}></Products>
     </div>
   );
 }

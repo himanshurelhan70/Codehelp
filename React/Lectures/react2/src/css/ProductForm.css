@@ -1,0 +1,35 @@
+.product-form{
+    width: 100%;
+    padding: 30px;
+    background: rgb(8, 67, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group{
+    width: 90%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.form-btn{
+   padding: 10px;
+   border: none;
+   outline: none;
+   color: #fff;
+   font-weight: 500;
+   background: rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   margin-top: 10px;
+   transition:  all 0.3s ease;
+}
+
+.form-btn:hover{
+    background: skyblue;
+    color: #000;
+}
