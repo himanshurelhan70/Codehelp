@@ -14,7 +14,7 @@ function Card({id, image,info,price,name, removeTour})  {
         
         <div className="card">
 
-            <img src={image} className="image"></img>
+            <img src={image} className="image" alt=""></img>
 
             <div className="tour-info">
                 <div className="tour-details">
@@ -25,7 +25,7 @@ function Card({id, image,info,price,name, removeTour})  {
                 <div className="description">
                     {description}
                     <span className="read-more" onClick={readmoreHandler}>
-                        {readmore ? `Show Less`: `Read \More`}
+                        {readmore ? `Show Less`: `Read More`}
                     </span>
                 </div>
             </div>
