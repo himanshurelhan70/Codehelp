@@ -102,6 +102,7 @@ header{
 
     header .logo-div img{
         width: 9rem;
+        height: 9rem;
         margin-top: -1rem;
         margin-left: -2.4rem;
     }
@@ -433,7 +434,7 @@ header{
         width: 90%;
         height: 55rem;
         background-color: #afafaf;
-        background-image: url('../images/projects/tic-tac-toe.png');
+        background-image: url('../images/projects/tic-tac-toe.webp');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -442,15 +443,15 @@ header{
     }
 
     .project-container #project-2{
-        background-image: url('../images/projects/password-generator.jpg');
+        background-image: url('../images/projects/password-generator.webp');
     }
 
     .project-container #project-3{
-        background-image: url('../images/projects/counter-app.jpg');
+        background-image: url('../images/projects/counter-app.webp');
     }
 
     .project-container #project-4{
-        background-image: url('../images/projects/profile-share.jpg');
+        background-image: url('../images/projects/profile-share.webp');
     }
 
     .project-card:nth-child(even){
@@ -522,6 +523,7 @@ header{
 
     .project-content .project-skills-container img{
         width: 4rem;
+        height: 4rem;
     }
 
     .project-content h2{
@@ -789,6 +791,13 @@ footer{
         color: var(--clr-orange);
     }
 
+    /* ////////// description text for links  */
+    .screen-reader-text{
+        /* display: none; */
+        position: absolute;
+        left: -100%;
+    }
+
 /* media queries */
 @media (max-width: 1360px){
     .hero-section .faded-text{
@@ -820,6 +829,10 @@ footer{
 }
 
 @media (max-width: 1150px){
+    header{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
     .hero-section{
         flex-direction: column;
         gap: 0;
@@ -878,6 +891,10 @@ footer{
 
     .project-card .project-number{
         display: none;
+    }
+
+    .form-field textarea{
+        height: 200px;
     }
 }
 
@@ -945,6 +962,7 @@ footer{
 
     header .logo-div img {
         width: 7rem;
+        height: 7rem;
     }
 
     header .logo-div .name {
@@ -980,6 +998,7 @@ footer{
 
     .project-content .project-skills-container img {
         width: 3rem;
+        height: 3rem;
     }
 
     .project-card .project-content{
@@ -1022,6 +1041,10 @@ footer{
     .form-field input,
     .form-field textarea{
         padding-left: 2rem;
+    }
+
+    .form-field textarea{
+        height: 150px;
     }
 }
 

@@ -4,9 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Himanshu</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="robots" content="index, follow">
+
+    <!-- title -->
+    <title>Himanshu Relhan - Portfolio</title>
+    <meta property="og:title" content="Himanshu Relhan - Portfolio" />
+    <meta name="twitter:title" content="Himanshu Relhan - Portfolio" />
+    <!-- url -->
+    <link rel="canonical" href="https://himanshuwebdev.com" />
+    <meta property="og:url" content="https://himanshuwebdev.com" />
+    <meta name="twitter:url" content="https://himanshuwebdev.com" />
+    <!-- description -->
+    <meta name="description"
+      content="Himanshu is a MERN stack web developer from India who has expertise in developing user-friendly responsive websites using HTML5, CSS3, JavaScript, Tailwind, Bootstrap, ReactJs etc. and he is a keen learner. To have a discussion, get in touch with him today!" />
+    <meta property="og:description"
+      content="Himanshu is a MERN stack web developer from India who has expertise in developing user-friendly responsive websites using HTML5, CSS3, JavaScript, Tailwind, Bootstrap, ReactJs etc. and he is a keen learner. To have a discussion, get in touch with him today!" />
+    <meta name="twitter:description"
+      content="Himanshu is a MERN stack web developer from India who has expertise in developing user-friendly responsive websites using HTML5, CSS3, JavaScript, Tailwind, Bootstrap, ReactJs etc. and he is a keen learner. To have a discussion, get in touch with him today!" />
+    <!-- image -->
+    <meta property="og:image" content="images/android-chrome-192x192.png" />
+    <meta name="twitter:image" content="images/android-chrome-192x192.png"/>
+    <!-- og tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="himanshuwebdev" />
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary" />
+    <!-- ////  favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="manifest.json" />
+    <!-- /// theme color /// -->
+    <meta name="theme-color" content="#343d68" />
 
     <link
       rel="stylesheet"
@@ -116,7 +145,10 @@
             </p>
 
             <div class="project-buttons">
-              <a class="btn" href="https://himanshurelhan70.github.io/tic-tac-toe/" target="_blank">Read More</a>
+              <a class="btn" href="https://himanshurelhan70.github.io/tic-tac-toe/" target="_blank">
+                Read More
+                <span class="screen-reader-text">learn more</span>
+              </a>
               <a href="https://github.com/himanshurelhan70/tic-tac-toe" target="_blank">
                 <i class="fa-brands fa-github icons"></i>
               </a>
@@ -146,7 +178,10 @@
             </p>
 
             <div class="project-buttons">
-              <a class="btn" href="https://himanshurelhan70.github.io/password-generator/" target="_blank">Read More</a>
+              <a class="btn" href="https://himanshurelhan70.github.io/password-generator/" target="_blank">
+                Read More
+                <span class="screen-reader-text">learn more</span>
+              </a>
               <a href="https://github.com/himanshurelhan70/password-generator" target="_blank">
                 <i class="fa-brands fa-github icons"></i>
               </a>
@@ -176,7 +211,10 @@
             </p>
 
             <div class="project-buttons">
-              <a class="btn" href="https://himanshurelhan70.github.io/counter-app/" target="_blank">Read More</a>
+              <a class="btn" href="https://himanshurelhan70.github.io/counter-app/" target="_blank">
+                Read More
+                <span class="screen-reader-text">learn more</span>
+              </a>
               <a href="https://github.com/himanshurelhan70/counter-app" target="_blank">
                 <i class="fa-brands fa-github icons"></i>
               </a>
@@ -206,7 +244,10 @@
             </p>
 
             <div class="project-buttons">
-              <a class="btn" href="https://himanshurelhan70.github.io/profile-share-modal/" target="_blank">Read More</a>
+              <a class="btn" href="https://himanshurelhan70.github.io/profile-share-modal/" target="_blank">
+                Read More
+                <span class="screen-reader-text">learn more</span>
+              </a>
               <a href="https://github.com/himanshurelhan70/profile-share-modal" target="_blank">
                 <i class="fa-brands fa-github icons"></i>
               </a>
@@ -297,15 +338,21 @@
 
         <form action="#" class="contact-form">
           <div class="form-field">
-            <input type="text" placeholder="Enter your name" />
+            <input type="text" 
+            placeholder="Enter your name" 
+            required/>
           </div>
 
           <div class="form-field">
-            <input type="email" placeholder="Enter your email address" />
+            <input type="email"
+             placeholder="Enter your email address"
+             required />
           </div>
 
           <div class="form-field">
-            <input type="text" placeholder="Enter your subject" />
+            <input type="text" 
+            placeholder="Enter your subject"
+            required />
           </div>
 
           <div class="form-field">
@@ -315,6 +362,7 @@
               cols="30"
               rows="10"
               placeholder="Enter your message"
+              required
             ></textarea>
           </div>
 
@@ -369,7 +417,24 @@
     <!-- ///// -->
 
     <!-- /////// scripts /// -->
+
+        
+    <script>
+      if ("serviceWorker" in navigator) { 
+        navigator.serviceWorker.register("sw.js").then(registration => {
+          console.log("SW Registered!");
+          // console.log(registration);
+        }).catch(error => {
+          console.log("SW Registration Failed!");
+          console.log(error);
+      });
+    }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
+
+
+   
   </body>
 </html>

@@ -1,0 +1,29 @@
+{
+    "name":"Himanshu Webdev",
+    "short_name":"Himanshu Webdev",
+    "start_url": ".",
+    "theme_color":"#343d68",
+    "background_color":"#ffffff",
+    "display":"standalone",
+    "orientation": "portrait",
+    "icons":[
+        {"src":"images/android-chrome-192x192.png", 
+        "sizes":"192x192",
+        "type":"image/png",
+        "purpose":"maskable"
+        },
+        {"src":"images/android-chrome-192x192.png", 
+        "sizes":"192x192",
+        "type":"image/png"
+        },
+        {"src":"images/android-chrome-512x512.png", 
+        "sizes":"512x512",
+        "type":"image/png",
+        "purpose":"maskable"
+        },
+        {"src":"images/android-chrome-512x512.png", 
+        "sizes":"512x512",
+        "type":"image/png"
+        }
+    ]
+}

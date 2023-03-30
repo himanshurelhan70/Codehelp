@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
 const overlay = document.querySelector('.overlay');
+const contactForm = document.querySelector('.contact-form');
 
 hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('active');
@@ -16,6 +17,12 @@ function closeMobileNav(){
 
 overlay.addEventListener("click", closeMobileNav);
 
+contactForm.addEventListener('submit', (event) => {
+  // event.preventDefault();
+  alert("your response has been successfully submitted")}
+
+  );
+
 
 var typeData = new Typed(".role", {
     strings: [
@@ -29,3 +36,4 @@ var typeData = new Typed(".role", {
     backSpeed: 80,
     backDelay: 1000,
   });
+
