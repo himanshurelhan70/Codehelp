@@ -5,8 +5,6 @@ import Spinner from './Spinner';
 import useGif from '../hooks/useGif';
 
 
-const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
-
 const Random = () => {
 
 
@@ -20,7 +18,7 @@ const Random = () => {
       <h1 className='mt-[15px] text-xl md:text-2xl underline uppercase font-bold'> A Random Gif</h1>
 
     {
-        loading ? (<Spinner/>) : (<img src= {gif} width="450" />)
+        loading ? (<Spinner/>) : (<img src= {gif} width="450"  alt='gif'/>)
     }
 
       
