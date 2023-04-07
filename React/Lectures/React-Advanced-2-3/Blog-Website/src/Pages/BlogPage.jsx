@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import { useNavigate, useNavigation } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import BlogDetails from '../components/BlogDetails';
-import { baseUrl } from '../baseUrl';
+// import { baseUrl } from '../baseUrl';
 
 const BlogPage = () => {
     const newBaseUrl = "https://codehelp-apis.vercel.app/api/";
