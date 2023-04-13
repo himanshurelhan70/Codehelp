@@ -12,6 +12,8 @@ body{
 }
 
 .container{
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,25 +22,26 @@ body{
 
 
 .title{
-    font-size: 3rem;
-    margin:6vh;
+    font-size: 2.5rem;
+    margin: 3rem auto;
     border: 7px dashed rgb(1,17,160);
     border-radius: 20px;
-    padding:1vh 5vw;
+    padding:1rem 2rem;
+    text-align: center;
 }
 
-
 .cards{
+    width: 100%;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1300px;
-    margin:0 auto;
 }
 
 .card{
-    width:400px;
+    width: 90%;
+    max-width:400px;
     height:max-content;
     margin:1rem;
     padding:1rem;
@@ -50,7 +53,7 @@ body{
 }
 
 .image{
-    width:380px;
+    width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
@@ -75,7 +78,9 @@ body{
 
 .btn-red{
     margin-top:18px;
-    padding: 10px 80px;
+    /* padding: 10px 80px; */
+    width: 85%;
+    height: 2.5rem;
     border: 1px solid #b4161b;
     cursor: pointer;
     border-radius:10px;
@@ -109,4 +114,21 @@ body{
     background-color: white;
     color: black;
     transition: all 0.2s;
+}
+
+/* media queries */
+@media (max-width: 900px){
+    .title{
+        font-size: 2rem;
+        margin: 3rem 2rem;
+    }
+}
+
+@media (max-width: 400px){
+    .title{
+        font-size: 1.7rem;
+        padding: 1rem;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
 }
