@@ -14,7 +14,7 @@ export default function Counter() {
       <button className="border border-white rounded-xl w-[160px] h-[60px] flex items-center justify-center hover:bg-[#1d8abc] transition-all"
       onClick={() => dispatch(increment())}>Increment</button>
       
-      <div className="rounded-full w-[120px] h-[120px] border-2 flex items-center justify-center">
+      <div className="rounded-full w-[120px] h-[120px] border-2 flex items-center justify-center text-3xl">
         {counter}
       </div>
 
