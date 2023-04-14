@@ -1,0 +1,23 @@
+<!-- DOM manipulation using JS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste JavaScript</title>
+</head>
+<body>
+    <div id="root">
+        <!-- <h1>Namaste Everyone</h1> -->
+    </div>
+
+    <script>
+        const h1 = document.createElement('h1');
+        h1.innerHTML = 'Namaste Everyone from JavaScript';
+
+        const root = document.getElementById('root');
+        root.append(h1);
+    </script>
+</body>
+</html>

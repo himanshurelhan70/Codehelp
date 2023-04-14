@@ -1,0 +1,118 @@
+Today's Assignment (24/12/2022)
+
+● What is Emmet?
+	Emmet is a plug-in for text editors that allow for high-speed coding and editing in HTML & CSS 
+	by using some abbreviations.
+
+	Emmet short hand expression(abbreviations) can be used to generate HTML markup and CSS.
+
+	// here is an example below
+
+	#page>div.logo+ul#navigation>li*5>a{Item $}
+
+	adding new line
+	<div id="page">
+    		<div class="logo"></div>
+    		<ul id="navigation">
+        		<li><a href="">Item 1</a></li>
+        		<li><a href="">Item 2</a></li>
+        		<li><a href="">Item 3</a></li>
+        		<li><a href="">Item 4</a></li>
+       		<li><a href="">Item 5</a></li>
+    		</ul>
+	</div>
+
+	HTML emmets :
+		! => HTML boiler plate
+		ID => div#header
+		Class => div.title 
+		Child => nav>ul>li
+		Sibling => div+p+bq
+		Multiplication => ul>li*5
+		Text => a{Click me}
+		Item numbering => ul>li.item$*5
+
+		//All unknown abbreviations will be transformed to tag, e.g. foo → <foo></foo>.
+	
+	CSS emmets : 
+		d:f => display:flex;
+		pos:r => position:relative; 
+		m10-10-10-10 => margin: 10px 10px 10px 10px;
+
+		//All unknown abbreviations will be transformed into property name: foo-bar → foo-bar: |;
+
+	Refer to this Emmet cheatSheet : https://docs.emmet.io/cheat-sheet/
+
+
+● Difference between a Library and Framework?
+	JS frameworks and JS libraries are both pieces of code written by others to solve common problems. 
+
+	JS libraries give developers predefined methods and classes to help them work faster and more efficiently.
+	You have complete control over the application's flow when you use a library. 
+	You get to decide when and where you want to call the library.
+	e.g : React, jQuery, NumPy(python)
+
+	On the other hand, the JS framework acts as a framework for developers to construct apps for specific platforms.
+	when you use a framework, the control is inverted, i.e., the framework controls the flow and calls your code.
+	It gives you various locations to plug in your code, but it only calls the code you've plugged in when it's needed.
+	e.g : Angular, Vue, Django(python)
+
+
+● What is CDN? Why do we use it?
+	A content delivery network (CDN) also called a content distribution network refers to a 
+	geographically distributed group of servers which work together to provide Internet content 
+	from a network location closest to a user to speed up its delivery.
+
+	Benefits :
+		1) Improving website load times
+		2) Reducing bandwidth costs
+		3) Increasing content availability and redundancy
+		4) Improving website security
+
+
+● Why is React known as React?
+
+	React was developed for applications (Facebook) that have constantly changing data. 
+	Since React is a front-end Library or the “View” in MVC(Model-View-Controller), this means that as the user clicks around and changes
+	the app’s data, the view should “react” or change with those user events. 
+	User events being mouse clicks, typing, submitting a form.
+
+● What is cross-origin in script tag?
+	The crossorigin attribute provides support for CORS, defining how the element handles cross-origin requests.
+	A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+
+	CORS(Cross-Origin Resource Sharing) used to manage cross-origin requests. 
+	It is a mechanism that allows resources on a web page to be requested from another domain outside their own domain.
+    It defines a way of how a browser and server can interact to determine whether it is safe to allow the cross-origin request.
+	CORS allows servers to specify who can access the assets on the server, among many other things.
+	If cross-origin is set to "user-credential" then user authentication is required to access the file.
+
+
+● What is difference between React and ReactDOM
+	React library is responsible for creating views/UI and 
+	The react-dom package provides DOM-specific methods and it is responsible to actually render UI in the browser.
+
+	React, often called ReactJS, is a platform-agnostic JavaScript library used to build user interfaces (UI).
+	Agnostic means that React, the core technology itself, doesn’t care whether your project is a web app or native app.
+
+	React has some tools that allow us to develop on different platforms:
+
+	ReactDOM is a React library that allows us to use React to build web applications and websites.
+	React Native is a React framework that allows us to build native mobile applications that you install via the App Store or Google Play.
+	Instead of using Swift for iOS and Java for Android, React Native allows us to write one app, with React Syntax, 
+	and run it on both iOS and Android at the same time.
+
+	What ReactDOM and React Native have in common today, is that they both depend on the React core library.
+	So whether you’re building a web app or a mobile app, the core/parent technology, React, has to be imported at the top of your code files.
+
+
+● What is difference between react.development.js and react.production.js files via CDN?
+	react.production.js - These are Minified files and much more optimized for production use(less file size).
+ 	react.development.js - More readable and developer friendly code that can be used to debug.
+
+● What is async and defer? - see Akshay Saini's Youtube video :)
+
+	see notes.pdf for answer
+
+● Learn about Arrow Functions before the next class
+
