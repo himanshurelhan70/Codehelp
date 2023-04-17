@@ -35,13 +35,22 @@ app.post('/users/user', (req, res) => {
     res.send(`Post Request Successful name=${name} and uid=${uid}`);
 })
 
+// connection to remote server - Mongo Atlas
 // mongoose - connects express and mongoDB
+// const mongoose = require('mongoose');
+// mongoose.connect('mongodb+srv://himanshu:CvBKlSOuKl50SBaQ@cluster0.0ab3hvv.mongodb.net/?retryWrites=true&w=majority', {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// })
+// .then(() => console.log("Connection Established"))
+// .catch((error) => console.log("Received an error", error.message))
+
+
+// Connection to LocalServer - Mongo Compass
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://himanshu:CvBKlSOuKl50SBaQ@cluster0.0ab3hvv.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb://127.0.0.1:27017/testDb', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
 .then(() => console.log("Connection Established"))
 .catch((error) => console.log("Received an error", error.message))
-
-
