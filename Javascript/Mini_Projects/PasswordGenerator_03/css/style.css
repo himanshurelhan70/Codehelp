@@ -303,7 +303,7 @@ button.copy-btn .copy-tooltip.active{
     }
 
     input.display{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .slider::-webkit-slider-thumb{
@@ -325,7 +325,7 @@ button.copy-btn .copy-tooltip.active{
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 390px){
     .display-container{
         padding-left: 2rem;
         padding-right: 2rem;
@@ -335,4 +335,26 @@ button.copy-btn .copy-tooltip.active{
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    input.display{
+        font-size: 1.6rem;
+    }
 }
+
+@media (max-width: 350px){
+    .app-name{
+        font-size: 2rem;
+    }
+    .checkbox-container label {
+        font-size: 1.7rem;
+    }
+
+    input.display{
+        font-size: 1.4rem;
+    }
+
+    #generateButton {
+        font-size: 1.7rem;
+    }
+}
+
