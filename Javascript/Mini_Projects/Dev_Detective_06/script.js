@@ -30,6 +30,10 @@ btnsubmit.addEventListener("click", function () {
   if (input.value !== "") {
     getUserData(url + input.value);
   }
+
+  else{
+    alert("Enter some input to search");
+  }
 });
 
 input.addEventListener(
@@ -75,7 +79,9 @@ function getUserData(gitUrl) {
 //RENDER
 function updateProfile(data) {
   if (data.message !== "Not Found") {
+
     noresults.style.display = "none";
+    
     function checkNull(param1, param2) {
       if (param1 === "" || param1 === null) {
         param2.style.opacity = 0.5;
@@ -85,6 +91,7 @@ function updateProfile(data) {
         return true;
       }
     }
+
     avatar.src = `${data.avatar_url}`;
     userName.innerText = data.name === null ? data.login : data.name;
     user.innerText = `@${data.login}`;
@@ -103,7 +110,8 @@ function updateProfile(data) {
     company.innerText = checkNull(data.company, company) ? data.company : "Not Available";
     searchbar.classList.toggle("active");
     profilecontainer.classList.toggle("active");
-  } else {
+  } 
+  else {
     noresults.style.display = "block";
   }
 }
@@ -174,7 +182,7 @@ function init() {
 
 
   //by default, pranaygupta ki info show krre h UI pr
-  getUserData(url + "thepranaygupta");
+  getUserData(url + "himanshurelhan70");
 }
 
 init();

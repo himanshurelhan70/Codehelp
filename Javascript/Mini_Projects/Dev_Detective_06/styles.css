@@ -84,7 +84,8 @@
   
   #input {
     border: none;
-    width: 80%;
+    width: 75%;
+    font-size: 13px;
     outline: none;
     background: none;
     color: var(--lm-text);
@@ -209,10 +210,10 @@
   }
   
   .profile-info {
-    width: 50%;
+    width: 100%;
     display: flex;
     gap: 14px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
   
@@ -236,6 +237,7 @@
     font-weight: bold;
     right: 10px;
     top: -25px;
+    letter-spacing: 1px;
   }
   
   .dm-text {
@@ -259,18 +261,17 @@
     .container {
       width: 573px;
     }
+
+    #input{
+      font-size: 18px;
+    }
+
+    #input::placeholder{
+      font-size: 18px;
+    }
   
     .searchbar-container {
       padding: 10px;
-    }
-  
-    #input {
-      font-size: 18px;
-      width: 75%;
-    }
-  
-    #input::placeholder {
-      font-size: 18px;
     }
   
     .btn-search {
@@ -350,7 +351,7 @@
     }
   }
   
-  /* Desktop */
+  /* //////// Desktop */
   @media screen and (min-width: 1280px) {
     .container {
       width: 730px;
@@ -391,14 +392,9 @@
     }
   
     .error {
-      top: 50%;
-      right: 20%;
+      /* top: 50%; */
+      /* right: 20%; */
       transform: translateY(-50%);
-      font-size: 15px;
-    }
-  
-    #input {
-      width: 65%;
+      font-size: 17px;
     }
   }
-  
