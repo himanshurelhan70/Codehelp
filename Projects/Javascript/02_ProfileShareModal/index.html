@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal | Himanshu</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+</head>
+
+<body>
+    <!-- /// wrapper starts /// -->
+    <div class="wrapper">
+        <div class="circle-top circle"></div>
+        <div class="circle-bottom circle"></div>
+
+        <!-- /// card starts /// -->
+        <div class="card">
+            <img src="images/profile-image.jpg" alt="user image">
+            <h2 class="user-name">Himanshu&nbsp;Relhan</h2>
+            <h3 class="user-designation">Website Developer</h3>
+
+            <div class="buttons-group">
+                <button id="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile
+                </button>
+                <button id="follow-btn">Follow Me</button>
+            </div>
+        </div>
+        <!-- /// card ends /// -->
+    </div>
+    <!-- /// wrapper ends /// -->
+
+
+    <!-- /// profile Modal starts /// -->
+    <div class="modal" id="profile-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title">Share My Profile</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="profile-modal-close"></i>
+            </div>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3>Share this via</h3>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100005474088549" id="facebook-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/himanshu_relhan" id="twitter-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/_no__b_o_d_y/" id="instagram-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/919467272127?text=Hi%20Himanshu" id="whatsapp-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/Himanshurelhan" id="telegram-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /// profile Modal ends /// -->
+
+
+    <!-- /// follow Modal starts /// -->
+     <div class="modal" id="follow-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title">Github Profile</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="follow-modal-close"></i>
+            </div>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3>Check my Repositories</h3>
+
+            <div class="social-icons">
+                <a href="https://github.com/himanshurelhan70/profile-share-modal" id="github-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://github.com/himanshurelhan70" id="follow-unfollow" target="_blank">
+                    Follow
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /// follow Modal ends /// -->
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- custom script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html> 
