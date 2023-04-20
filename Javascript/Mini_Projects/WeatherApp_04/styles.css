@@ -14,9 +14,10 @@
 
 .wrapper{
     width:100vw;
-    height:100vh;
+    min-height:100vh;
     color: var(--colorLight2);
-    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    padding-bottom: 1px;
 }
 
 h1 {
@@ -150,6 +151,7 @@ h1 {
 .parameter-container{
     width:90%;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px 20px;
     justify-content: center;
     align-items: center;
@@ -157,7 +159,8 @@ h1 {
 }
 
 .parameter{
-    width:30%;
+    /* width:30%; */
+    flex-basis: 50%;
     max-width:200px;
     background-color: rgba(219, 226, 239, 0.5);;
     border-radius: 5px;
