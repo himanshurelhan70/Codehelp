@@ -37,6 +37,10 @@
     flex-direction: column;
     gap: 36px;
   }
+
+  .title{
+    font-size: 1.4rem;
+  }
   
   #app {
     width: 100%;
@@ -260,6 +264,10 @@
   @media screen and (min-width: 768px) {
     .container {
       width: 573px;
+    }
+
+    .title{
+      font-size: 1.6rem;
     }
 
     #input{
