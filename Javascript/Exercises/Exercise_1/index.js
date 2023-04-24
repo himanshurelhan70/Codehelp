@@ -1,48 +1,50 @@
-// 1) Write a function that takes two numbers as arguments and returns their sum.
+// ## Topics covered:
+// - Variables, data types, and operators
+// - Conditional statements and loops
 
-function sumNumbers(a, b){
-    const sum =  a+b;
+
+// 1) Write a function that takes two numbers as arguments and returns their sum.
+function sumNumbers(num1, num2){
+    const sum = num1+num2;
     return sum;
 }
+console.log(`//////// Answer 1 => ${sumNumbers(6, 9)}`);
 
-console.log(sumNumbers(6, 9));
 
 // 2) Write a function that takes a string as an argument and returns its length.
-
-function stringLength(str){
+function getStringLength(str){
     return typeof str === 'string' ? str.length : "only strings are accepted";
     // return string.length;
 }
-
-console.log(stringLength(686));
+console.log(`//////// Answer 2 => ${getStringLength('himanshu')}`);
 
 
 // 3) Write a program that takes two numbers and displays their sum, difference, product, and quotient.
-
 function calculateNums(num1, num2){
-    console.log(num1 + num2);
-    console.log(num1 - num2);
-    console.log(num1 * num2);
-    console.log(num1 % num2);
+    console.log(`//////// Answer 3 => `);
+    console.log(`Sum: ${num1 + num2}`); // Sum: 64
+    console.log(`Difference: ${num1 - num2}`); // Difference: -22
+    console.log(`Product: ${num1 * num2}`); // Product: 903
+    console.log(`Quotient: ${num1 / num2}`);
 }
+calculateNums(69, 2);
 
-calculateNums(5, 4);
 
 //4) Write a function that takes two numbers as arguments and returns the larger number.
-function getLarger(num1, num2){
+function findLargerNumber(num1, num2){
     return num1>num2 ? num1 : num2;
 }
-
-console.log('larger number is : ', getLarger(7, 8));
+console.log(`//////// Answer 4 => Larger number is ${findLargerNumber(7, 8)}`);
 
 
 // 5)  Write a program that displays a string in reverse order.
-function reverseStr(str){
+function reverseString(str){
     const strArr = str.split("");
     const strArrRev =  strArr.reverse();
     const strRev = strArrRev.join("")
     return strRev;
 }
+console.log(`//////// Answer 5 => Reverse String ${reverseString('himanshu')}`);
 
 
 // 6) Write a program that takes a number and checks whether it is positive, negative, or zero.
@@ -51,8 +53,7 @@ function checkNum(num){
    else if(num < 0) return 'negative';
    else return 'zero';
 }
-
-console.log(`Number is ${checkNum(0)}`);
+console.log(`//////// Answer 6 => Number is ${checkNum(6)}`);
 
 
 // 7) Write a program that takes a number and prints the multiplication table for that number.
@@ -61,8 +62,10 @@ function printTable(num){
         console.log(`${num} * ${i} = ${num*i}`);
     }
 }
+const num = 3;
+console.log(`//////// Answer 7 => multiplication Table of ${num}`);
+printTable(num);
 
-console.log(printTable(6));
 
 // 8) Write a program that takes a number and calculates the sum of all numbers from 1 to that number.
 function sumTillNum(num){
@@ -74,92 +77,34 @@ function sumTillNum(num){
 
     return (num*(num+1))/2;
 }
+const num2 = 10;
+console.log(`//////// Answer 8 => Sum of ${num2} numbers is ${sumTillNum(num2)}`);
 
-
-console.log(sumTillNum(10));
 
 // 9) Write a program that takes a string and prints out the number of vowels in the string.
-function countVowels(str){
+function countVowels(str) {
+    const vowels = ["a", "e", "i", "o", "u"];
     let count = 0;
-    tempStr = str.toLowerCase();
 
-    for(let i=0; i<tempStr.length; i++){
-            if( tempStr.charAt(i) === 'a' || 
-                tempStr.charAt(i) === 'e' || 
-                tempStr.charAt(i) === 'i' || 
-                tempStr.charAt(i) === 'o' || 
-                tempStr.charAt(i) === 'u' )
-                {
-                    count++;
-            }
+    for (let i = 0; i < str.length; i++) {
+      if (vowels.includes(str[i].toLowerCase())) {
+        count++;
+      }
     }
     return count;
 }
+const str = 'himanshu';
+console.log(`//////// Answer 9 => Number of Vowels in ${str} are ${countVowels(str)}`);
 
-console.log(countVowels('himanshU'));
+// 10) Write a function that takes two arrays of integers as arguments and returns an array of the common elements 
+// in both arrays, without any duplicates. The returned array should be sorted in ascending order.
 
-// 10) Write a function that takes two arrays of integers as arguments and returns an array of the common elements in both arrays,
-//  without any duplicates. The returned array should be sorted in ascending order.
+function getCommonElements(arr1, arr2){
+    
+    for(let i=0; i<arr1.length; i++){
 
-function getCommonValues(arr1, arr2){
-    arr1.forEacg
+    }
 }
 
-
-// console.log(reverseStr("himanshu"));
-
-// // 6) Write a function that takes an array of numbers as an argument and returns the sum of all the numbers in the array.
-// function sumArray(arr){
-//    return  arr.reduce((element, acc) => acc + element, 0);
-// }
-
-// console.log(sumArray([1, 2, 3, 4, 5]));
-
-
-// // 7) Write a function that takes an array of strings as an argument and returns a new array 
-// // with only the strings that have a length greater than 5.
-
-// function filterStrArr(arr){
-//     return arr.filter((element) => element.length > 5);
-// }
-
-// console.log(filterStrArr(['himanshu', 'relhan', 'is', 'an', 'MCA', 'student']));
-
-
-
-// // 8) Write a function that takes an object and returns an array of all the keys in the object.
-// function getkeysArr(obj){
-//     const newArr = [];
-//     Object.keys(obj).forEach((key) => newArr.push(key));
-//     return newArr;
-// }
-
-// console.log(getkeysArr({
-//     name: 'himanshu',
-//     age: 69,
-//     height: "5'11"
-// }));
-
-
-// // 9) Write a function that takes an array of objects and returns an array of all the 
-// // values of a specified property name.
-
-// function getValuesArr(arr){
-//     const newArr = [];
-//     Object.keys(obj).forEach((key) => newArr.push(key));
-//     return newArr;
-// }
-
-// console.log(
-//     getkeysArr([
-//         {
-//             name: 'himanshu',
-//             age: 69,
-//             height: "5'11"
-//         },
-//     ])
-// );
-
-
-// // 10) Write a function that takes an array of objects and returns the object with the highest
-// //  value for a specified property name.
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [3, 4, 4, 6, 7];
