@@ -7,5 +7,8 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4",
     "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "feather": "^0.0.5"
   }
 }
