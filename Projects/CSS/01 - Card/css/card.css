@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fefefe;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    max-width: 1300px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 35px;
+}
+
+.card-wrapper{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-wrapper .card{
+    border-radius: 7px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card .image-div{
+    margin-bottom: 16px;
+}
+
+.card .image-div img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.card .text-div .course-name{
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.card .text-div .line-break{
+    width: 75%;
+    height: 3px;
+    background-color: rgb(237, 237, 237);
+    border: none;
+}
+
+.card .text-div .price-div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 16px;
+    font-weight: 700;
+}
+
+.card .text-div .price-div .current-price{
+    color: rgb(102 116 204); 
+}
+
+.card .text-div .price-div .actual-price{
+    color: rgb(119 124 133);
+}
+
+.card .text-div .price-div .discount{
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(29 209 161);
+    padding: 7px 8px;
+    border-radius: 5px;
+    letter-spacing: -0.5px;
+}

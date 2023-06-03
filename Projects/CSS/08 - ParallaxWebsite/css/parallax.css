@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.wrapper .banner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.banner .background{
+    transform: translateZ(-20px) scale(4);
+}
+
+.banner .foreground{
+    transform: translateZ(-10px) scale(2);
+}
+
+.banner h1{
+    position: absolute;
+    left: 50%;
+    top: 5rem;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 10rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* section starts */
+.section{
+    color: #fff;
+    background-color: rgb(45, 45, 45);
+    padding: 5rem 0;
+}
+
+.section h2{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+/*////////// para-div */
+.section .para-div{
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.section .para-div p{
+    font-size: 1.5rem;
+}
+
+.section .para-div p:first-child{
+    margin-bottom: 35px;
+}
+
+
+/* ////////// bg-div */
+.section .bg-div{
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.section #bg-div1{
+    background-image: url('../images/sport-1.jpg');
+}
+
+.section #bg-div2{
+    background-image: url('../images/sport-2.jpg');
+}
+
+.section #bg-div3{
+    background-image: url('../images/sport-3.jpg');
+}
+
+
+.section .bg-div .title-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    background-color: #fff;
+    padding: 0.5rem 2.5rem;
+}
+
+.section .bg-div .title-div p{
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}

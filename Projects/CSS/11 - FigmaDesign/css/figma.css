@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap');
+
+/* utilities */
+:root{
+    --blue: #4E5DC0;
+    --white: #fff;
+    --black: #000;
+    --h2Color: #16171C;
+    --navColor: #777C85;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 135rem;
+    margin: 2.5rem auto;
+    padding: 2rem 2.5rem;
+}
+
+
+/* //////////// header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .img-div img{
+    width: 100%;
+    height: 100%;
+}
+
+header nav{
+    max-width: 500px;
+    flex-grow: 0.5;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a{
+    position: relative;
+    text-transform: capitalize;
+    color: var(--navColor);
+    font-weight: 600;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a::after{
+    content: "";
+    display: block;
+    width: 75%;
+    height: 0.1rem;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--blue);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+header nav ul li a:hover{
+    color: var(--blue);
+}
+
+header nav ul li a:hover::after{
+    opacity: 1;
+}
+
+header .btn-div button{
+    width: 16.5rem;
+    height: 5.4rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+}
+
+header .btn-div button:hover{
+    background-color: #3b5998;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+
+/* /////////// section ///// */
+.section{
+    display: flex;
+    justify-content: space-between;
+    margin: 13rem 0;
+}
+
+.section .text-div{
+    width: 45%;
+}
+
+.section .image-div{
+    /* width: 45%; */
+}
+
+.section .image-div img{
+    /* width: 100%; */
+    /* height: 100%; */
+    /* object-fit: cover; */
+}
+
+.section .text-div h2{
+    width: max-content;
+    padding-bottom: 2rem;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 500;
+    color: var(--h2Color);
+    font-stretch: ultra-condensed;
+    position: relative;
+}
+
+.section .text-div h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section .text-div p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 4.2rem;
+}
+
+/* //////////// section 2 */
+#section2 .text-div{
+    order: 1;
+}
+
+
+/* ////// footer  */
+footer{
+    display: grid;
+    border-top: 0.2rem solid #E1E2E4;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5rem 0 4rem;
+}
+
+footer h4{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--blue);
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.4rem;
+}
+
+footer p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #999;
+}
+
+footer .policy-div h4{
+    margin-top: 4.5rem;
+    text-decoration: underline;
+}
+
+footer .policy-div p{
+    font-family: 'Raleway', sans-serif;
+}
+
+footer .contact-div .email{
+    margin-top: 4rem;
+}
+
+footer .menu-div{
+    justify-self: end;
+}
+
+footer .menu-div ul{
+    list-style-type: none;
+}
+
+footer .menu-div ul li a{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #999;
+    transition: color 0.2s;
+    text-transform: capitalize;
+}
+
+footer .menu-div ul li a:hover{
+    color: var(--blue);
+}
+
+footer .social-div{
+    justify-self: end;
+    display: flex;
+    gap: 0.8rem;
+}
+
+footer .social-div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    background-color: var(--blue);
+    transition: background-color 0.2s;
+}
+
+footer .social-div a.facebook:hover{
+    background-color: #3b5998;
+}
+
+footer .social-div a.twitter:hover{
+    background-color: #00acee;
+}
+
+footer .social-div a.instagram:hover{
+    background-color: #c13584;
+}
+
+@media screen and (max-width: 1100px){
+    .section{
+        flex-direction: column; 
+        align-items: start;
+    }
+
+    .section .text-div{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    #section2 .text-div{
+        order: 0;
+    }
+}

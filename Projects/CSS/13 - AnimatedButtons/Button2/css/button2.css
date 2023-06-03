@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(42, 42, 42);
+}
+
+button{
+    width: 30rem;
+    height: 6rem;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: 6rem;
+    letter-spacing: -1px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+button span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+button::before, button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+button:hover::before{
+    transform: rotate(45deg);
+    background: none;
+}
+
+button:hover::after{
+    transform: rotate(-45deg);
+    background: none;
+}

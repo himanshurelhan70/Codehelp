@@ -1,0 +1,73 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(239, 130, 130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% calc(50% - 5em);
+    font-size: 40px;
+}
+
+.box{
+    width: 4em;
+    height: 4em;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateBox 20s infinite linear;
+}
+
+@keyframes rotateBox{
+    to {transform: rotateY(360deg);}
+}
+
+.side{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    background-color: rgba(117, 216, 255, 0.1);
+    box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.8) inset;
+}
+
+.front{
+    transform: translateZ(2em);
+    background: rgb(99, 219, 255, 0.8);
+}
+
+.back{
+    transform: rotateY(180deg)  translateZ(2em);
+    /* background: red; */
+    /* background-color: rgb(211, 255, 130, 0.5); */
+    background: rgb(99, 219, 255, 0.8);
+}
+
+.right{
+    transform: rotateY(90deg) translateZ(2em);
+    background: rgb(99, 219, 255, 0.8);
+}
+
+.left{
+    transform: rotateY(270deg) translateZ(2em);
+    background: rgb(99, 219, 255, 0.8);
+}
+
+
+.top{
+    transform: translateY(-50%) rotateX(90deg);
+    background: rgb(99, 219, 255, 0.8);
+}
+
+.bottom{
+    transform: translateY(50%) rotateX(90deg);
+    background: rgb(99, 219, 255, 0.8);
+    box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.8);
+}
