@@ -11,7 +11,6 @@ const dbConnect = () => {
     .catch( (error) => {
         console.log("Issue in DB Connection");
         console.error(error.message);
-        //iska matlab kya h ?
         process.exit(1);
     } );
 }

@@ -5,7 +5,7 @@ const Todo = require("../models/Todo");
 
 exports.createTodo = async(req,res) => {
     try {
-            //extract title and desxcription from reauest body
+            //extract title and description from reauest body
             const {title,description} = req.body;
             //create a new Todo Obj and insert in DB
             const response = await Todo.create({title,description});

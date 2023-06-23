@@ -1,5 +1,5 @@
 {
-  "name": "express-4",
+  "name": "blogapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,9 +13,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^7.1.0"
-  },
-  "devDependencies": {
+    "mongoose": "^7.0.4",
     "nodemon": "^2.0.22"
   }
 }
