@@ -93,7 +93,7 @@ exports.login = async (req,res) => {
 
                                 
 
-            user = user.toObject();
+            user = user.toObject(); //why?
             user.token = token;
             user.password = undefined;
 
@@ -102,7 +102,7 @@ exports.login = async (req,res) => {
                 httpOnly:true,
             }
 
-            res.cookie("babbarCookie", token, options).status(200).json({
+            res.cookie("jwt_token", token, options).status(200).json({
                 success:true,
                 token,
                 user,
