@@ -1,5 +1,6 @@
 //app create
 const express = require("express");
+const cors = require('cors');
 const app = express();
 
 // access environment variables 
@@ -8,6 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 //adding middleware
 app.use(express.json());
+app.use(cors());
 
 const fileupload = require("express-fileupload");
 app.use(fileupload({

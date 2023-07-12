@@ -1,51 +1,47 @@
 const mongoose = require("mongoose");
-const nodemailer = require("nodemailer");
+const nodemailer = require('../config/nodemailer');
 
 const fileSchema = new mongoose.Schema({
-    name:{
-        type:String,
-        required:true,
+    name: {
+        type: String,
+        required: true,
     },
-    url:{
-        type:String,
+    url: {
+        type: String,
     },
-    tags:{
-        type:String,
+    tags: {
+        type: String,
     },
-    email:{
-        type:String,
+    email: {
+        type: String,
     }
 });
 
 
-//post middleware
-fileSchema.post("save", async function(doc) {
-    try{
-        console.log("DOC",doc)
+// post middleware
+fileSchema.post("save", async function (doc) {
+    try {
+        console.log("DOC", doc)
 
-        //transporter 
-        //TODO: shift this configuration under /config folder
-        let transporter = nodemailer.createTransport({
-            host: process.env.MAIL_HOST,
-            auth:{
-                user:process.env.MAIL_USER,
-                pass: process.env.MAIL_PASS,
-            },
-        });
+        // connecting to nodemailer
+        const transporter = nodemailer.connect();
 
         //send mail 
         let info = await transporter.sendMail({
-            from:`himanshurelhan70@gmail.com`,
+            from: `himanshurelhan70@gmail.com`,
             to: doc.email,
             subject: "New File Uploaded on Cloudinary",
-            html:`<h2>Hello Jee</h2> <p>File Uploaded View here: <a href="${doc.imageUrl}">${doc.imageUrl}</a> </p>`,
-        })
-        
-        console.log("INFO", info);
+            html: `<h2>Hello ${doc.name} </h2> 
+            <p>File has been successfully Uploaded </p>
+            <p>View here: <a href="${doc.url}">${doc.url}</a></p>
+            `,
+        });
+
+        console.log("INFO of mail", info);
 
 
     }
-    catch(error) {
+    catch (error) {
         console.error(error);
     }
 })
