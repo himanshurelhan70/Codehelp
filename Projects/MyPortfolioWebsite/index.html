@@ -63,12 +63,20 @@
       </ul>
     </nav>
 
+    <!-- loading animation -->
+    <!-- <div class="loader"> -->
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+    <!-- </div> -->
+
     <!-- ///////// header /////////-->
     <header class="container">
-      <div class="logo-div">
+      <a class="logo-div" href="#">
         <img src="images/userAsset/NavLogo.png" alt="" />
         <span class="name">imanshu</span>
-      </div>
+      </a>
 
       <nav class="nav-div">
         <ul>
@@ -91,7 +99,7 @@
           I’m a software developer and it is my portfolio website. Here you’ll
           learn about my journey as a software developer.
         </p>
-        <a class="btn" href="assets/himanshu_resume.pdf" target="_blank" download>Hire me</a>
+        <a class="btn" href="assets/himanshu_resume.pdf" target="_blank" download>Resume</a>
       </div>
 
       <!-- right -->
@@ -274,23 +282,12 @@
           </h2>
 
           <p>
-            Hi Everyone My name is Himanshu Relhan. I am a Frontend Web Developer I
-            have been Learning Web Development for one Year and Currently I am working as a
-            Software Developer Intern in a Startup company.Nowadays I am
-            Learning MERN stack to improve my Skillset and become a Full Stack Developer
+            My name is Himanshu Relhan, and I am a Full Stack Web Developer. 
+            With 6 months of experience in this field, I have had the opportunity 
+            to work extensively with the MERN Stack (MongoDB, Express.js, React.js, and Node.js). 
+            As a developer, I am passionate about creating efficient, user-friendly, 
+            and visually appealing web applications.
           </p>
-<!-- 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-            doloremque aspernatur, maiores voluptatum minus laudantium?
-            Perspiciatis accusamus minima porro dolores necessitatibus, magni
-            dolorem et qui veniam nulla sequi molestiae maxime.
-          </p> -->
-
-          <!-- <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem
-            quos ullam veritatis voluptates tenetur qui ipsa nulla culpa itaque?
-          </p> -->
         </div>
 
         <div class="skill-section-right">
@@ -305,23 +302,26 @@
           <img src="images/stack/Tailwind.png" alt="" />
           <img src="images/stack/Bootstrap.svg" alt="" />
 
+          <img src="images/stack/MongoDB.svg" alt="" />
+          <img src="images/stack/Express.png" alt="" />
+          <img src="images/stack/React.png" alt="" />
+          <img src="images/stack/NodeJs.svg" alt="" />
+
+
           <img src="images/stack/Git.svg" alt="" />
           <img src="images/stack/Github.svg" alt="" />
 
-          <img src="images/stack/React.png" alt="" />
-          <!-- <img src="images/stack/NodeJs.svg" alt="" /> -->
+          <img src="images/stack/Redux.svg" alt="" />
+          <img src="images/stack/Vercel.svg" alt="" />
 
           <!-- <img src="images/stack/Next.svg" alt="" />
-          <img src="images/stack/Redux.svg" alt="" /> -->
+           -->
 
-        
 
           <!-- <img src="images/stack/MaterialUI.svg" alt="" /> -->
-          <!-- <img src="images/stack/Express.png" alt="" /> -->
         
           <!-- <img src="images/stack/Bash.svg" alt="" /> -->
-          <!-- <img src="images/stack/MongoDB.svg" alt="" /> -->
-          <!-- <img src="images/stack/Vercel.svg" alt="" /> -->
+          
           <!-- <img src="images/stack/ChartJs.svg" alt="" /> -->
           <!-- <img src="images/stack/Docker.svg" alt="" /> -->
           <!-- <img src="images/stack/Graphql.svg" alt="" />/ -->
@@ -338,33 +338,35 @@
           Questions, thoughts, or just want to say hello?
         </h3>
 
-        <form action="#" class="contact-form">
+        <form action="#" class="contact-form" id="contact-form">
           <div class="form-field">
             <input type="text" 
+            name="name"
             placeholder="Enter your name" 
             required/>
           </div>
 
           <div class="form-field">
             <input type="email"
+             name="email"
              placeholder="Enter your email address"
              required />
           </div>
 
           <div class="form-field">
-            <input type="text" 
-            placeholder="Enter your subject"
-            required />
+            <input type="tel" 
+            name="phone"
+            placeholder="Enter your Mobile number"
+             />
           </div>
 
           <div class="form-field">
             <textarea
               name=""
-              id="my-textarea"
+              id="messageArea"
               cols="30"
               rows="10"
               placeholder="Enter your message"
-              required
             ></textarea>
           </div>
 
@@ -404,7 +406,7 @@
             <i class="fa-brands fa-twitter icon"></i>
           </a>
 
-          <a href="https://www.instagram.com/_no__b_o_d_y/" target="_blank" aria-label="instagram account">
+          <a href="https://www.instagram.com/himanshu_relhan_/" target="_blank" aria-label="instagram account">
             <i class="fa-brands fa-instagram icon"></i>
           </a>
 
