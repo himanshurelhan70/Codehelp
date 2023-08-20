@@ -16,6 +16,32 @@
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <link rel="stylesheet" href="main.css" />
     <title>Razorpay Clone</title>
+
+    <style>
+       .corefeaturesection{
+            background-size: 100% 100%;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+
+        .ctaSection{
+          background-size: 100% 100%;
+        }
+
+        .companiesList{
+          animation:10s infinite linear moveCompany;
+        }
+
+        @keyframes moveCompany {
+          0%{
+            top:0;
+          }
+          100%{
+            top:-50%;
+          }
+        }
+
+    </style>
   </head>
   <body>
     <div class="wrapper w-full overflow-hidden">
@@ -1231,9 +1257,9 @@
 
       <!-- --------------------------------Core Features-------------------------------- -->
       <section
-        class="w-full bg-[url(/assets/core-features-sectionBg.svg)] coreFeaturesBg bg-no-repeat bg-cover bg-center mt-6 md:mt-14 relative z-[1000]"
+        class="w-full bg-[url(/assets/core-features-sectionBg.svg)] coreFeatures bg-no-repeat bg-cover bg-center mt-6 md:mt-14 relative z-[1000]"
       >
-        <div class="w-10/12 md:w-11/12 max-w-[1080px] mx-auto relative pt-4">
+        <div class="w-10/12 md:w-11/12 max-w-[1080px] mx-auto relative py-[14rem]">
           <h2
             class="font-mullish font-extrabold text-2xl text-center text-white"
           >
@@ -1505,7 +1531,7 @@
           class="bg-[url(/assets/CTABg.svg)] ctaBg bg-center w-full h-full absolute -z-[1]"
         ></div>
         <div
-          class="w-10/12 my-10 md:my-0 md:w-11/12 max-w-[1080px] h-full mx-auto relative flex items-center space-x-20 justify-between"
+          class="w-10/12 my-10 md:my-0 md:w-11/12 py-32 max-w-[1080px] h-full mx-auto relative flex items-center space-x-20 justify-between"
         >
           <div>
             <h2
