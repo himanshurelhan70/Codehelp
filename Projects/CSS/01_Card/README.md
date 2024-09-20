@@ -17,15 +17,20 @@ The project contains the following files and folders:</br>
 * Responsive Design: The webpage is built with responsive design principles in mind, adjusting the layout for different screen sizes.
 * Dynamic Links: Each course card links to an external page for the respective course using the target="_blank" attribute, which opens the link in a new tab.
 * Google Fonts Integration: Custom fonts are used via Google Fonts to enhance the typography of the webpage.
-Technology Stack
+# Technology Stack
 * HTML5: For structuring the content of the webpage.
 * CSS3: Custom CSS is used to design and style the card layout and other elements.
 * Google Fonts: The Rubik font is imported from Google Fonts for a clean, modern look.
 * Static Assets: Images are used for course thumbnails, stored in the images/ directory.
 # How to Run the Project
-* Download or clone this repository: 
-* git clone https://github.com/your-username/codehelp-course-listing.git
-* Open the index.html file in your browser:
-* Navigate to the project directory.
-* Open index.html in any web browser to view the course listing page.
+1. Download or clone this repository:
+
+   ```bash
+   git clone https://github.com/himanshurelhan70/Codehelp.git
+
+2. Open the `index.html` file in your browser:
+
+   - Navigate to the project directory.
+   - Open `index.html` in any web browser to view the course listing page.
+
 
